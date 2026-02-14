@@ -1,0 +1,618 @@
+[28-Aug-2025 09:46:34 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'dsimtedu_Admin-DB'@'localhost' to database 'dsimtedu_DSIMT_DB' in /home2/dsimtedu/public_html/Admission-Form/apply.php:3
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission-Form/apply.php(3): mysqli_connect()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission-Form/apply.php on line 3
+[28-Aug-2025 09:46:36 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'dsimtedu_Admin-DB'@'localhost' to database 'dsimtedu_DSIMT_DB' in /home2/dsimtedu/public_html/Admission-Form/apply.php:3
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission-Form/apply.php(3): mysqli_connect()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission-Form/apply.php on line 3
+[28-Aug-2025 09:46:37 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'dsimtedu_Admin-DB'@'localhost' to database 'dsimtedu_DSIMT_DB' in /home2/dsimtedu/public_html/Admission-Form/apply.php:3
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission-Form/apply.php(3): mysqli_connect()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission-Form/apply.php on line 3
+[28-Aug-2025 09:46:37 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'dsimtedu_Admin-DB'@'localhost' to database 'dsimtedu_DSIMT_DB' in /home2/dsimtedu/public_html/Admission-Form/apply.php:3
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission-Form/apply.php(3): mysqli_connect()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission-Form/apply.php on line 3
+[28-Aug-2025 09:47:13 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'dsimtedu_Admin-DB'@'localhost' to database 'dsimtedu_DSIMT_DB' in /home2/dsimtedu/public_html/Admission-Form/apply.php:3
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission-Form/apply.php(3): mysqli_connect()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission-Form/apply.php on line 3
+[28-Aug-2025 09:48:12 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'dsimtedu_Admin-DB'@'localhost' to database 'dsimtedu_DSIMT_DB' in /home2/dsimtedu/public_html/Admission-Form/apply.php:3
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission-Form/apply.php(3): mysqli_connect()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission-Form/apply.php on line 3
+[28-Aug-2025 09:48:14 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'dsimtedu_Admin-DB'@'localhost' to database 'dsimtedu_DSIMT_DB' in /home2/dsimtedu/public_html/Admission-Form/apply.php:3
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission-Form/apply.php(3): mysqli_connect()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission-Form/apply.php on line 3
+[28-Aug-2025 09:48:51 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'dsimtedu_Admin-DB'@'localhost' to database 'dsimtedu_DSIMT_DB' in /home2/dsimtedu/public_html/Admission-Form/apply.php:3
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission-Form/apply.php(3): mysqli_connect()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission-Form/apply.php on line 3
+[28-Aug-2025 09:57:48 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'dsimtedu_Admin-DB'@'localhost' to database 'dsimtedu_DSIMT_DB' in /home2/dsimtedu/public_html/Admission_Form/apply.php:3
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/apply.php(3): mysqli_connect()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/apply.php on line 3
+[28-Aug-2025 09:57:51 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'dsimtedu_Admin-DB'@'localhost' to database 'dsimtedu_DSIMT_DB' in /home2/dsimtedu/public_html/Admission_Form/apply.php:3
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/apply.php(3): mysqli_connect()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/apply.php on line 3
+[28-Aug-2025 09:57:51 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'dsimtedu_Admin-DB'@'localhost' to database 'dsimtedu_DSIMT_DB' in /home2/dsimtedu/public_html/Admission_Form/apply.php:3
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/apply.php(3): mysqli_connect()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/apply.php on line 3
+[28-Aug-2025 10:01:24 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'dsimtedu_AdminDB'@'localhost' to database 'dsimtedu_DSIMT_DB' in /home2/dsimtedu/public_html/Admission_Form/apply.php:3
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/apply.php(3): mysqli_connect()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/apply.php on line 3
+[28-Aug-2025 10:01:27 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'dsimtedu_AdminDB'@'localhost' to database 'dsimtedu_DSIMT_DB' in /home2/dsimtedu/public_html/Admission_Form/apply.php:3
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/apply.php(3): mysqli_connect()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/apply.php on line 3
+[28-Aug-2025 10:01:29 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'dsimtedu_AdminDB'@'localhost' to database 'dsimtedu_DSIMT_DB' in /home2/dsimtedu/public_html/Admission_Form/apply.php:3
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/apply.php(3): mysqli_connect()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/apply.php on line 3
+[28-Aug-2025 10:01:29 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'dsimtedu_AdminDB'@'localhost' to database 'dsimtedu_DSIMT_DB' in /home2/dsimtedu/public_html/Admission_Form/apply.php:3
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/apply.php(3): mysqli_connect()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/apply.php on line 3
+[28-Aug-2025 10:01:29 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'dsimtedu_AdminDB'@'localhost' to database 'dsimtedu_DSIMT_DB' in /home2/dsimtedu/public_html/Admission_Form/apply.php:3
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/apply.php(3): mysqli_connect()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/apply.php on line 3
+[28-Aug-2025 10:01:29 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'dsimtedu_AdminDB'@'localhost' to database 'dsimtedu_DSIMT_DB' in /home2/dsimtedu/public_html/Admission_Form/apply.php:3
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/apply.php(3): mysqli_connect()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/apply.php on line 3
+[28-Aug-2025 10:01:30 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'dsimtedu_AdminDB'@'localhost' to database 'dsimtedu_DSIMT_DB' in /home2/dsimtedu/public_html/Admission_Form/apply.php:3
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/apply.php(3): mysqli_connect()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/apply.php on line 3
+[28-Aug-2025 10:01:30 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'dsimtedu_AdminDB'@'localhost' to database 'dsimtedu_DSIMT_DB' in /home2/dsimtedu/public_html/Admission_Form/apply.php:3
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/apply.php(3): mysqli_connect()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/apply.php on line 3
+[28-Aug-2025 10:03:01 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'dsimtedu_AdminDB'@'localhost' to database 'dsimtedu_DSIMTDB' in /home2/dsimtedu/public_html/Admission_Form/apply.php:3
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/apply.php(3): mysqli_connect()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/apply.php on line 3
+[28-Aug-2025 10:03:10 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'dsimtedu_AdminDB'@'localhost' to database 'dsimtedu_DSIMTDB' in /home2/dsimtedu/public_html/Admission_Form/apply.php:3
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/apply.php(3): mysqli_connect()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/apply.php on line 3
+[28-Aug-2025 10:04:33 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'dsimtedu_AdminDB'@'localhost' to database 'dsimtedu_DSIMTDB' in /home2/dsimtedu/public_html/Admission_Form/apply.php:3
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/apply.php(3): mysqli_connect()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/apply.php on line 3
+[18-Oct-2025 11:26:09 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php:3
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/pitp_form.php(3): mysqli_connect()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 3
+[18-Oct-2025 11:26:12 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php:3
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/pitp_form.php(3): mysqli_connect()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 3
+[06-Nov-2025 15:38:14 UTC] PHP Warning:  Undefined array key "names" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 8
+[06-Nov-2025 15:38:14 UTC] PHP Warning:  Undefined array key "fname" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 9
+[06-Nov-2025 15:38:14 UTC] PHP Warning:  Undefined array key "cnic" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 10
+[06-Nov-2025 15:38:14 UTC] PHP Warning:  Undefined array key "email" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 11
+[06-Nov-2025 15:38:14 UTC] PHP Warning:  Undefined array key "qualification" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 12
+[06-Nov-2025 15:38:14 UTC] PHP Warning:  Undefined array key "domicile" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 13
+[06-Nov-2025 15:38:14 UTC] PHP Warning:  Undefined array key "course" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 14
+[06-Nov-2025 15:38:14 UTC] PHP Warning:  Undefined array key "DOB" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 15
+[06-Nov-2025 15:38:14 UTC] PHP Warning:  Undefined array key "gender" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 16
+[06-Nov-2025 15:38:14 UTC] PHP Warning:  Undefined array key "address" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 17
+[06-Nov-2025 15:38:14 UTC] PHP Warning:  Undefined array key "contact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 18
+[06-Nov-2025 15:38:14 UTC] PHP Warning:  Undefined array key "wcontact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 19
+[06-Nov-2025 15:38:14 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'fullname' cannot be null in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php:40
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/pitp_form.php(40): mysqli_stmt_execute()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 40
+[06-Nov-2025 15:38:16 UTC] PHP Warning:  Undefined array key "names" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 8
+[06-Nov-2025 15:38:16 UTC] PHP Warning:  Undefined array key "fname" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 9
+[06-Nov-2025 15:38:16 UTC] PHP Warning:  Undefined array key "cnic" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 10
+[06-Nov-2025 15:38:16 UTC] PHP Warning:  Undefined array key "email" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 11
+[06-Nov-2025 15:38:16 UTC] PHP Warning:  Undefined array key "qualification" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 12
+[06-Nov-2025 15:38:16 UTC] PHP Warning:  Undefined array key "domicile" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 13
+[06-Nov-2025 15:38:16 UTC] PHP Warning:  Undefined array key "course" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 14
+[06-Nov-2025 15:38:16 UTC] PHP Warning:  Undefined array key "DOB" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 15
+[06-Nov-2025 15:38:16 UTC] PHP Warning:  Undefined array key "gender" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 16
+[06-Nov-2025 15:38:16 UTC] PHP Warning:  Undefined array key "address" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 17
+[06-Nov-2025 15:38:16 UTC] PHP Warning:  Undefined array key "contact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 18
+[06-Nov-2025 15:38:16 UTC] PHP Warning:  Undefined array key "wcontact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 19
+[06-Nov-2025 15:38:16 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'fullname' cannot be null in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php:40
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/pitp_form.php(40): mysqli_stmt_execute()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 40
+[06-Nov-2025 15:38:16 UTC] PHP Warning:  Undefined array key "names" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 8
+[06-Nov-2025 15:38:16 UTC] PHP Warning:  Undefined array key "fname" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 9
+[06-Nov-2025 15:38:16 UTC] PHP Warning:  Undefined array key "cnic" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 10
+[06-Nov-2025 15:38:16 UTC] PHP Warning:  Undefined array key "email" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 11
+[06-Nov-2025 15:38:16 UTC] PHP Warning:  Undefined array key "qualification" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 12
+[06-Nov-2025 15:38:16 UTC] PHP Warning:  Undefined array key "domicile" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 13
+[06-Nov-2025 15:38:16 UTC] PHP Warning:  Undefined array key "course" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 14
+[06-Nov-2025 15:38:16 UTC] PHP Warning:  Undefined array key "DOB" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 15
+[06-Nov-2025 15:38:16 UTC] PHP Warning:  Undefined array key "gender" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 16
+[06-Nov-2025 15:38:16 UTC] PHP Warning:  Undefined array key "address" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 17
+[06-Nov-2025 15:38:16 UTC] PHP Warning:  Undefined array key "contact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 18
+[06-Nov-2025 15:38:16 UTC] PHP Warning:  Undefined array key "wcontact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 19
+[06-Nov-2025 15:38:16 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'fullname' cannot be null in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php:40
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/pitp_form.php(40): mysqli_stmt_execute()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 40
+[06-Nov-2025 15:43:50 UTC] PHP Warning:  Undefined array key "names" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 8
+[06-Nov-2025 15:43:50 UTC] PHP Warning:  Undefined array key "fname" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 9
+[06-Nov-2025 15:43:50 UTC] PHP Warning:  Undefined array key "cnic" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 10
+[06-Nov-2025 15:43:50 UTC] PHP Warning:  Undefined array key "email" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 11
+[06-Nov-2025 15:43:50 UTC] PHP Warning:  Undefined array key "qualification" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 12
+[06-Nov-2025 15:43:50 UTC] PHP Warning:  Undefined array key "domicile" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 13
+[06-Nov-2025 15:43:50 UTC] PHP Warning:  Undefined array key "course" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 14
+[06-Nov-2025 15:43:50 UTC] PHP Warning:  Undefined array key "DOB" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 15
+[06-Nov-2025 15:43:50 UTC] PHP Warning:  Undefined array key "gender" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 16
+[06-Nov-2025 15:43:50 UTC] PHP Warning:  Undefined array key "address" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 17
+[06-Nov-2025 15:43:50 UTC] PHP Warning:  Undefined array key "contact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 18
+[06-Nov-2025 15:43:50 UTC] PHP Warning:  Undefined array key "wcontact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 19
+[06-Nov-2025 15:43:50 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'fullname' cannot be null in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php:40
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/pitp_form.php(40): mysqli_stmt_execute()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 40
+[06-Nov-2025 15:44:02 UTC] PHP Warning:  Undefined array key "names" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 8
+[06-Nov-2025 15:44:02 UTC] PHP Warning:  Undefined array key "fname" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 9
+[06-Nov-2025 15:44:02 UTC] PHP Warning:  Undefined array key "cnic" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 10
+[06-Nov-2025 15:44:02 UTC] PHP Warning:  Undefined array key "email" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 11
+[06-Nov-2025 15:44:02 UTC] PHP Warning:  Undefined array key "qualification" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 12
+[06-Nov-2025 15:44:02 UTC] PHP Warning:  Undefined array key "domicile" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 13
+[06-Nov-2025 15:44:02 UTC] PHP Warning:  Undefined array key "course" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 14
+[06-Nov-2025 15:44:02 UTC] PHP Warning:  Undefined array key "DOB" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 15
+[06-Nov-2025 15:44:02 UTC] PHP Warning:  Undefined array key "gender" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 16
+[06-Nov-2025 15:44:02 UTC] PHP Warning:  Undefined array key "address" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 17
+[06-Nov-2025 15:44:02 UTC] PHP Warning:  Undefined array key "contact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 18
+[06-Nov-2025 15:44:02 UTC] PHP Warning:  Undefined array key "wcontact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 19
+[06-Nov-2025 15:44:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'fullname' cannot be null in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php:40
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/pitp_form.php(40): mysqli_stmt_execute()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 40
+[06-Nov-2025 15:52:23 UTC] PHP Warning:  Undefined array key "names" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 8
+[06-Nov-2025 15:52:23 UTC] PHP Warning:  Undefined array key "fname" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 9
+[06-Nov-2025 15:52:23 UTC] PHP Warning:  Undefined array key "cnic" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 10
+[06-Nov-2025 15:52:23 UTC] PHP Warning:  Undefined array key "email" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 11
+[06-Nov-2025 15:52:23 UTC] PHP Warning:  Undefined array key "qualification" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 12
+[06-Nov-2025 15:52:23 UTC] PHP Warning:  Undefined array key "domicile" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 13
+[06-Nov-2025 15:52:23 UTC] PHP Warning:  Undefined array key "course" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 14
+[06-Nov-2025 15:52:23 UTC] PHP Warning:  Undefined array key "DOB" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 15
+[06-Nov-2025 15:52:23 UTC] PHP Warning:  Undefined array key "gender" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 16
+[06-Nov-2025 15:52:23 UTC] PHP Warning:  Undefined array key "address" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 17
+[06-Nov-2025 15:52:23 UTC] PHP Warning:  Undefined array key "contact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 18
+[06-Nov-2025 15:52:23 UTC] PHP Warning:  Undefined array key "wcontact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 19
+[06-Nov-2025 15:52:23 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'fullname' cannot be null in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php:40
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/pitp_form.php(40): mysqli_stmt_execute()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 40
+[06-Nov-2025 15:52:26 UTC] PHP Warning:  Undefined array key "names" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 8
+[06-Nov-2025 15:52:26 UTC] PHP Warning:  Undefined array key "fname" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 9
+[06-Nov-2025 15:52:26 UTC] PHP Warning:  Undefined array key "cnic" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 10
+[06-Nov-2025 15:52:26 UTC] PHP Warning:  Undefined array key "email" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 11
+[06-Nov-2025 15:52:26 UTC] PHP Warning:  Undefined array key "qualification" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 12
+[06-Nov-2025 15:52:26 UTC] PHP Warning:  Undefined array key "domicile" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 13
+[06-Nov-2025 15:52:26 UTC] PHP Warning:  Undefined array key "course" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 14
+[06-Nov-2025 15:52:26 UTC] PHP Warning:  Undefined array key "DOB" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 15
+[06-Nov-2025 15:52:26 UTC] PHP Warning:  Undefined array key "gender" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 16
+[06-Nov-2025 15:52:26 UTC] PHP Warning:  Undefined array key "address" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 17
+[06-Nov-2025 15:52:26 UTC] PHP Warning:  Undefined array key "contact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 18
+[06-Nov-2025 15:52:26 UTC] PHP Warning:  Undefined array key "wcontact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 19
+[06-Nov-2025 15:52:26 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'fullname' cannot be null in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php:40
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/pitp_form.php(40): mysqli_stmt_execute()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 40
+[07-Nov-2025 04:41:54 UTC] PHP Warning:  Undefined array key "names" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 8
+[07-Nov-2025 04:41:54 UTC] PHP Warning:  Undefined array key "fname" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 9
+[07-Nov-2025 04:41:54 UTC] PHP Warning:  Undefined array key "cnic" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 10
+[07-Nov-2025 04:41:54 UTC] PHP Warning:  Undefined array key "email" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 11
+[07-Nov-2025 04:41:54 UTC] PHP Warning:  Undefined array key "qualification" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 12
+[07-Nov-2025 04:41:54 UTC] PHP Warning:  Undefined array key "domicile" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 13
+[07-Nov-2025 04:41:54 UTC] PHP Warning:  Undefined array key "course" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 14
+[07-Nov-2025 04:41:54 UTC] PHP Warning:  Undefined array key "DOB" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 15
+[07-Nov-2025 04:41:54 UTC] PHP Warning:  Undefined array key "gender" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 16
+[07-Nov-2025 04:41:54 UTC] PHP Warning:  Undefined array key "address" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 17
+[07-Nov-2025 04:41:54 UTC] PHP Warning:  Undefined array key "contact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 18
+[07-Nov-2025 04:41:54 UTC] PHP Warning:  Undefined array key "wcontact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 19
+[07-Nov-2025 04:41:54 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'fullname' cannot be null in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php:40
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/pitp_form.php(40): mysqli_stmt_execute()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 40
+[07-Nov-2025 13:31:15 UTC] PHP Warning:  Undefined array key "names" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 8
+[07-Nov-2025 13:31:15 UTC] PHP Warning:  Undefined array key "fname" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 9
+[07-Nov-2025 13:31:15 UTC] PHP Warning:  Undefined array key "cnic" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 10
+[07-Nov-2025 13:31:15 UTC] PHP Warning:  Undefined array key "email" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 11
+[07-Nov-2025 13:31:15 UTC] PHP Warning:  Undefined array key "qualification" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 12
+[07-Nov-2025 13:31:15 UTC] PHP Warning:  Undefined array key "domicile" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 13
+[07-Nov-2025 13:31:15 UTC] PHP Warning:  Undefined array key "course" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 14
+[07-Nov-2025 13:31:15 UTC] PHP Warning:  Undefined array key "DOB" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 15
+[07-Nov-2025 13:31:15 UTC] PHP Warning:  Undefined array key "gender" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 16
+[07-Nov-2025 13:31:15 UTC] PHP Warning:  Undefined array key "address" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 17
+[07-Nov-2025 13:31:15 UTC] PHP Warning:  Undefined array key "contact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 18
+[07-Nov-2025 13:31:15 UTC] PHP Warning:  Undefined array key "wcontact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 19
+[07-Nov-2025 13:31:15 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'fullname' cannot be null in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php:40
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/pitp_form.php(40): mysqli_stmt_execute()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 40
+[07-Nov-2025 13:31:17 UTC] PHP Warning:  Undefined array key "names" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 8
+[07-Nov-2025 13:31:17 UTC] PHP Warning:  Undefined array key "fname" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 9
+[07-Nov-2025 13:31:17 UTC] PHP Warning:  Undefined array key "cnic" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 10
+[07-Nov-2025 13:31:17 UTC] PHP Warning:  Undefined array key "email" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 11
+[07-Nov-2025 13:31:17 UTC] PHP Warning:  Undefined array key "qualification" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 12
+[07-Nov-2025 13:31:17 UTC] PHP Warning:  Undefined array key "domicile" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 13
+[07-Nov-2025 13:31:17 UTC] PHP Warning:  Undefined array key "course" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 14
+[07-Nov-2025 13:31:17 UTC] PHP Warning:  Undefined array key "DOB" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 15
+[07-Nov-2025 13:31:17 UTC] PHP Warning:  Undefined array key "gender" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 16
+[07-Nov-2025 13:31:17 UTC] PHP Warning:  Undefined array key "address" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 17
+[07-Nov-2025 13:31:17 UTC] PHP Warning:  Undefined array key "contact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 18
+[07-Nov-2025 13:31:17 UTC] PHP Warning:  Undefined array key "wcontact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 19
+[07-Nov-2025 13:31:17 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'fullname' cannot be null in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php:40
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/pitp_form.php(40): mysqli_stmt_execute()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 40
+[07-Nov-2025 13:59:57 UTC] PHP Warning:  Undefined array key "names" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 8
+[07-Nov-2025 13:59:57 UTC] PHP Warning:  Undefined array key "fname" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 9
+[07-Nov-2025 13:59:57 UTC] PHP Warning:  Undefined array key "cnic" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 10
+[07-Nov-2025 13:59:57 UTC] PHP Warning:  Undefined array key "email" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 11
+[07-Nov-2025 13:59:57 UTC] PHP Warning:  Undefined array key "qualification" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 12
+[07-Nov-2025 13:59:57 UTC] PHP Warning:  Undefined array key "domicile" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 13
+[07-Nov-2025 13:59:57 UTC] PHP Warning:  Undefined array key "course" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 14
+[07-Nov-2025 13:59:57 UTC] PHP Warning:  Undefined array key "DOB" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 15
+[07-Nov-2025 13:59:57 UTC] PHP Warning:  Undefined array key "gender" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 16
+[07-Nov-2025 13:59:57 UTC] PHP Warning:  Undefined array key "address" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 17
+[07-Nov-2025 13:59:57 UTC] PHP Warning:  Undefined array key "contact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 18
+[07-Nov-2025 13:59:57 UTC] PHP Warning:  Undefined array key "wcontact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 19
+[07-Nov-2025 13:59:57 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'fullname' cannot be null in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php:40
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/pitp_form.php(40): mysqli_stmt_execute()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 40
+[07-Nov-2025 16:26:47 UTC] PHP Warning:  Undefined array key "names" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 8
+[07-Nov-2025 16:26:47 UTC] PHP Warning:  Undefined array key "fname" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 9
+[07-Nov-2025 16:26:47 UTC] PHP Warning:  Undefined array key "cnic" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 10
+[07-Nov-2025 16:26:47 UTC] PHP Warning:  Undefined array key "email" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 11
+[07-Nov-2025 16:26:47 UTC] PHP Warning:  Undefined array key "qualification" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 12
+[07-Nov-2025 16:26:47 UTC] PHP Warning:  Undefined array key "domicile" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 13
+[07-Nov-2025 16:26:47 UTC] PHP Warning:  Undefined array key "course" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 14
+[07-Nov-2025 16:26:47 UTC] PHP Warning:  Undefined array key "DOB" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 15
+[07-Nov-2025 16:26:47 UTC] PHP Warning:  Undefined array key "gender" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 16
+[07-Nov-2025 16:26:47 UTC] PHP Warning:  Undefined array key "address" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 17
+[07-Nov-2025 16:26:47 UTC] PHP Warning:  Undefined array key "contact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 18
+[07-Nov-2025 16:26:47 UTC] PHP Warning:  Undefined array key "wcontact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 19
+[07-Nov-2025 16:26:47 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'fullname' cannot be null in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php:40
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/pitp_form.php(40): mysqli_stmt_execute()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 40
+[07-Nov-2025 16:26:47 UTC] PHP Warning:  Undefined array key "names" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 8
+[07-Nov-2025 16:26:47 UTC] PHP Warning:  Undefined array key "fname" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 9
+[07-Nov-2025 16:26:47 UTC] PHP Warning:  Undefined array key "cnic" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 10
+[07-Nov-2025 16:26:47 UTC] PHP Warning:  Undefined array key "email" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 11
+[07-Nov-2025 16:26:47 UTC] PHP Warning:  Undefined array key "qualification" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 12
+[07-Nov-2025 16:26:47 UTC] PHP Warning:  Undefined array key "domicile" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 13
+[07-Nov-2025 16:26:47 UTC] PHP Warning:  Undefined array key "course" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 14
+[07-Nov-2025 16:26:47 UTC] PHP Warning:  Undefined array key "DOB" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 15
+[07-Nov-2025 16:26:47 UTC] PHP Warning:  Undefined array key "gender" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 16
+[07-Nov-2025 16:26:47 UTC] PHP Warning:  Undefined array key "address" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 17
+[07-Nov-2025 16:26:47 UTC] PHP Warning:  Undefined array key "contact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 18
+[07-Nov-2025 16:26:47 UTC] PHP Warning:  Undefined array key "wcontact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 19
+[07-Nov-2025 16:26:47 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'fullname' cannot be null in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php:40
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/pitp_form.php(40): mysqli_stmt_execute()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 40
+[07-Nov-2025 19:14:09 UTC] PHP Warning:  Undefined array key "names" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 8
+[07-Nov-2025 19:14:09 UTC] PHP Warning:  Undefined array key "fname" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 9
+[07-Nov-2025 19:14:09 UTC] PHP Warning:  Undefined array key "cnic" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 10
+[07-Nov-2025 19:14:09 UTC] PHP Warning:  Undefined array key "email" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 11
+[07-Nov-2025 19:14:09 UTC] PHP Warning:  Undefined array key "qualification" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 12
+[07-Nov-2025 19:14:09 UTC] PHP Warning:  Undefined array key "domicile" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 13
+[07-Nov-2025 19:14:09 UTC] PHP Warning:  Undefined array key "course" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 14
+[07-Nov-2025 19:14:09 UTC] PHP Warning:  Undefined array key "DOB" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 15
+[07-Nov-2025 19:14:09 UTC] PHP Warning:  Undefined array key "gender" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 16
+[07-Nov-2025 19:14:09 UTC] PHP Warning:  Undefined array key "address" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 17
+[07-Nov-2025 19:14:09 UTC] PHP Warning:  Undefined array key "contact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 18
+[07-Nov-2025 19:14:09 UTC] PHP Warning:  Undefined array key "wcontact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 19
+[07-Nov-2025 19:14:09 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'fullname' cannot be null in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php:40
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/pitp_form.php(40): mysqli_stmt_execute()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 40
+[08-Nov-2025 08:50:02 UTC] PHP Warning:  Undefined array key "names" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 8
+[08-Nov-2025 08:50:02 UTC] PHP Warning:  Undefined array key "fname" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 9
+[08-Nov-2025 08:50:02 UTC] PHP Warning:  Undefined array key "cnic" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 10
+[08-Nov-2025 08:50:02 UTC] PHP Warning:  Undefined array key "email" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 11
+[08-Nov-2025 08:50:02 UTC] PHP Warning:  Undefined array key "qualification" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 12
+[08-Nov-2025 08:50:02 UTC] PHP Warning:  Undefined array key "domicile" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 13
+[08-Nov-2025 08:50:02 UTC] PHP Warning:  Undefined array key "course" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 14
+[08-Nov-2025 08:50:02 UTC] PHP Warning:  Undefined array key "DOB" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 15
+[08-Nov-2025 08:50:02 UTC] PHP Warning:  Undefined array key "gender" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 16
+[08-Nov-2025 08:50:02 UTC] PHP Warning:  Undefined array key "address" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 17
+[08-Nov-2025 08:50:02 UTC] PHP Warning:  Undefined array key "contact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 18
+[08-Nov-2025 08:50:02 UTC] PHP Warning:  Undefined array key "wcontact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 19
+[08-Nov-2025 08:50:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'fullname' cannot be null in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php:40
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/pitp_form.php(40): mysqli_stmt_execute()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 40
+[08-Nov-2025 08:50:10 UTC] PHP Warning:  Undefined array key "names" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 8
+[08-Nov-2025 08:50:10 UTC] PHP Warning:  Undefined array key "fname" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 9
+[08-Nov-2025 08:50:10 UTC] PHP Warning:  Undefined array key "cnic" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 10
+[08-Nov-2025 08:50:10 UTC] PHP Warning:  Undefined array key "email" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 11
+[08-Nov-2025 08:50:10 UTC] PHP Warning:  Undefined array key "qualification" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 12
+[08-Nov-2025 08:50:10 UTC] PHP Warning:  Undefined array key "domicile" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 13
+[08-Nov-2025 08:50:10 UTC] PHP Warning:  Undefined array key "course" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 14
+[08-Nov-2025 08:50:10 UTC] PHP Warning:  Undefined array key "DOB" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 15
+[08-Nov-2025 08:50:10 UTC] PHP Warning:  Undefined array key "gender" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 16
+[08-Nov-2025 08:50:10 UTC] PHP Warning:  Undefined array key "address" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 17
+[08-Nov-2025 08:50:10 UTC] PHP Warning:  Undefined array key "contact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 18
+[08-Nov-2025 08:50:10 UTC] PHP Warning:  Undefined array key "wcontact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 19
+[08-Nov-2025 08:50:10 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'fullname' cannot be null in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php:40
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/pitp_form.php(40): mysqli_stmt_execute()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 40
+[08-Nov-2025 20:02:38 UTC] PHP Warning:  Undefined array key "names" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 8
+[08-Nov-2025 20:02:38 UTC] PHP Warning:  Undefined array key "fname" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 9
+[08-Nov-2025 20:02:38 UTC] PHP Warning:  Undefined array key "cnic" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 10
+[08-Nov-2025 20:02:38 UTC] PHP Warning:  Undefined array key "email" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 11
+[08-Nov-2025 20:02:38 UTC] PHP Warning:  Undefined array key "qualification" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 12
+[08-Nov-2025 20:02:38 UTC] PHP Warning:  Undefined array key "domicile" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 13
+[08-Nov-2025 20:02:38 UTC] PHP Warning:  Undefined array key "course" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 14
+[08-Nov-2025 20:02:38 UTC] PHP Warning:  Undefined array key "DOB" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 15
+[08-Nov-2025 20:02:38 UTC] PHP Warning:  Undefined array key "gender" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 16
+[08-Nov-2025 20:02:38 UTC] PHP Warning:  Undefined array key "address" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 17
+[08-Nov-2025 20:02:38 UTC] PHP Warning:  Undefined array key "contact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 18
+[08-Nov-2025 20:02:38 UTC] PHP Warning:  Undefined array key "wcontact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 19
+[08-Nov-2025 20:02:38 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'fullname' cannot be null in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php:40
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/pitp_form.php(40): mysqli_stmt_execute()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 40
+[09-Nov-2025 13:57:53 UTC] PHP Warning:  Undefined array key "names" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 8
+[09-Nov-2025 13:57:53 UTC] PHP Warning:  Undefined array key "fname" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 9
+[09-Nov-2025 13:57:53 UTC] PHP Warning:  Undefined array key "cnic" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 10
+[09-Nov-2025 13:57:53 UTC] PHP Warning:  Undefined array key "email" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 11
+[09-Nov-2025 13:57:53 UTC] PHP Warning:  Undefined array key "qualification" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 12
+[09-Nov-2025 13:57:53 UTC] PHP Warning:  Undefined array key "domicile" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 13
+[09-Nov-2025 13:57:53 UTC] PHP Warning:  Undefined array key "course" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 14
+[09-Nov-2025 13:57:53 UTC] PHP Warning:  Undefined array key "DOB" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 15
+[09-Nov-2025 13:57:53 UTC] PHP Warning:  Undefined array key "gender" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 16
+[09-Nov-2025 13:57:53 UTC] PHP Warning:  Undefined array key "address" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 17
+[09-Nov-2025 13:57:53 UTC] PHP Warning:  Undefined array key "contact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 18
+[09-Nov-2025 13:57:53 UTC] PHP Warning:  Undefined array key "wcontact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 19
+[09-Nov-2025 13:57:53 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'fullname' cannot be null in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php:40
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/pitp_form.php(40): mysqli_stmt_execute()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 40
+[09-Nov-2025 15:04:32 UTC] PHP Warning:  Undefined array key "names" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 8
+[09-Nov-2025 15:04:32 UTC] PHP Warning:  Undefined array key "fname" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 9
+[09-Nov-2025 15:04:32 UTC] PHP Warning:  Undefined array key "cnic" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 10
+[09-Nov-2025 15:04:32 UTC] PHP Warning:  Undefined array key "email" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 11
+[09-Nov-2025 15:04:32 UTC] PHP Warning:  Undefined array key "qualification" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 12
+[09-Nov-2025 15:04:32 UTC] PHP Warning:  Undefined array key "domicile" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 13
+[09-Nov-2025 15:04:32 UTC] PHP Warning:  Undefined array key "course" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 14
+[09-Nov-2025 15:04:32 UTC] PHP Warning:  Undefined array key "DOB" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 15
+[09-Nov-2025 15:04:32 UTC] PHP Warning:  Undefined array key "gender" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 16
+[09-Nov-2025 15:04:32 UTC] PHP Warning:  Undefined array key "address" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 17
+[09-Nov-2025 15:04:32 UTC] PHP Warning:  Undefined array key "contact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 18
+[09-Nov-2025 15:04:32 UTC] PHP Warning:  Undefined array key "wcontact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 19
+[09-Nov-2025 15:04:32 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'fullname' cannot be null in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php:40
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/pitp_form.php(40): mysqli_stmt_execute()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 40
+[09-Nov-2025 17:57:06 UTC] PHP Warning:  Undefined array key "names" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 8
+[09-Nov-2025 17:57:06 UTC] PHP Warning:  Undefined array key "fname" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 9
+[09-Nov-2025 17:57:06 UTC] PHP Warning:  Undefined array key "cnic" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 10
+[09-Nov-2025 17:57:06 UTC] PHP Warning:  Undefined array key "email" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 11
+[09-Nov-2025 17:57:06 UTC] PHP Warning:  Undefined array key "qualification" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 12
+[09-Nov-2025 17:57:06 UTC] PHP Warning:  Undefined array key "domicile" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 13
+[09-Nov-2025 17:57:06 UTC] PHP Warning:  Undefined array key "course" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 14
+[09-Nov-2025 17:57:06 UTC] PHP Warning:  Undefined array key "DOB" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 15
+[09-Nov-2025 17:57:06 UTC] PHP Warning:  Undefined array key "gender" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 16
+[09-Nov-2025 17:57:06 UTC] PHP Warning:  Undefined array key "address" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 17
+[09-Nov-2025 17:57:06 UTC] PHP Warning:  Undefined array key "contact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 18
+[09-Nov-2025 17:57:06 UTC] PHP Warning:  Undefined array key "wcontact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 19
+[09-Nov-2025 17:57:06 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'fullname' cannot be null in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php:40
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/pitp_form.php(40): mysqli_stmt_execute()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 40
+[09-Nov-2025 17:57:14 UTC] PHP Warning:  Undefined array key "names" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 8
+[09-Nov-2025 17:57:14 UTC] PHP Warning:  Undefined array key "fname" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 9
+[09-Nov-2025 17:57:14 UTC] PHP Warning:  Undefined array key "cnic" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 10
+[09-Nov-2025 17:57:14 UTC] PHP Warning:  Undefined array key "email" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 11
+[09-Nov-2025 17:57:14 UTC] PHP Warning:  Undefined array key "qualification" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 12
+[09-Nov-2025 17:57:14 UTC] PHP Warning:  Undefined array key "domicile" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 13
+[09-Nov-2025 17:57:14 UTC] PHP Warning:  Undefined array key "course" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 14
+[09-Nov-2025 17:57:14 UTC] PHP Warning:  Undefined array key "DOB" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 15
+[09-Nov-2025 17:57:14 UTC] PHP Warning:  Undefined array key "gender" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 16
+[09-Nov-2025 17:57:14 UTC] PHP Warning:  Undefined array key "address" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 17
+[09-Nov-2025 17:57:14 UTC] PHP Warning:  Undefined array key "contact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 18
+[09-Nov-2025 17:57:14 UTC] PHP Warning:  Undefined array key "wcontact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 19
+[09-Nov-2025 17:57:14 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'fullname' cannot be null in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php:40
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/pitp_form.php(40): mysqli_stmt_execute()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 40
+[10-Nov-2025 02:31:14 UTC] PHP Warning:  Undefined array key "names" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 8
+[10-Nov-2025 02:31:14 UTC] PHP Warning:  Undefined array key "fname" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 9
+[10-Nov-2025 02:31:14 UTC] PHP Warning:  Undefined array key "cnic" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 10
+[10-Nov-2025 02:31:14 UTC] PHP Warning:  Undefined array key "email" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 11
+[10-Nov-2025 02:31:14 UTC] PHP Warning:  Undefined array key "qualification" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 12
+[10-Nov-2025 02:31:14 UTC] PHP Warning:  Undefined array key "domicile" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 13
+[10-Nov-2025 02:31:14 UTC] PHP Warning:  Undefined array key "course" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 14
+[10-Nov-2025 02:31:14 UTC] PHP Warning:  Undefined array key "DOB" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 15
+[10-Nov-2025 02:31:14 UTC] PHP Warning:  Undefined array key "gender" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 16
+[10-Nov-2025 02:31:14 UTC] PHP Warning:  Undefined array key "address" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 17
+[10-Nov-2025 02:31:14 UTC] PHP Warning:  Undefined array key "contact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 18
+[10-Nov-2025 02:31:14 UTC] PHP Warning:  Undefined array key "wcontact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 19
+[10-Nov-2025 02:31:14 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'fullname' cannot be null in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php:40
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/pitp_form.php(40): mysqli_stmt_execute()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 40
+[10-Nov-2025 02:40:23 UTC] PHP Warning:  Undefined array key "names" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 8
+[10-Nov-2025 02:40:23 UTC] PHP Warning:  Undefined array key "fname" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 9
+[10-Nov-2025 02:40:23 UTC] PHP Warning:  Undefined array key "cnic" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 10
+[10-Nov-2025 02:40:23 UTC] PHP Warning:  Undefined array key "email" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 11
+[10-Nov-2025 02:40:23 UTC] PHP Warning:  Undefined array key "qualification" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 12
+[10-Nov-2025 02:40:23 UTC] PHP Warning:  Undefined array key "domicile" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 13
+[10-Nov-2025 02:40:23 UTC] PHP Warning:  Undefined array key "course" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 14
+[10-Nov-2025 02:40:23 UTC] PHP Warning:  Undefined array key "DOB" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 15
+[10-Nov-2025 02:40:23 UTC] PHP Warning:  Undefined array key "gender" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 16
+[10-Nov-2025 02:40:23 UTC] PHP Warning:  Undefined array key "address" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 17
+[10-Nov-2025 02:40:23 UTC] PHP Warning:  Undefined array key "contact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 18
+[10-Nov-2025 02:40:23 UTC] PHP Warning:  Undefined array key "wcontact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 19
+[10-Nov-2025 02:40:23 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'fullname' cannot be null in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php:40
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/pitp_form.php(40): mysqli_stmt_execute()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 40
+[11-Nov-2025 16:06:37 UTC] PHP Warning:  Undefined array key "names" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 8
+[11-Nov-2025 16:06:37 UTC] PHP Warning:  Undefined array key "fname" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 9
+[11-Nov-2025 16:06:37 UTC] PHP Warning:  Undefined array key "cnic" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 10
+[11-Nov-2025 16:06:37 UTC] PHP Warning:  Undefined array key "email" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 11
+[11-Nov-2025 16:06:37 UTC] PHP Warning:  Undefined array key "qualification" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 12
+[11-Nov-2025 16:06:37 UTC] PHP Warning:  Undefined array key "domicile" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 13
+[11-Nov-2025 16:06:37 UTC] PHP Warning:  Undefined array key "course" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 14
+[11-Nov-2025 16:06:37 UTC] PHP Warning:  Undefined array key "DOB" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 15
+[11-Nov-2025 16:06:37 UTC] PHP Warning:  Undefined array key "gender" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 16
+[11-Nov-2025 16:06:37 UTC] PHP Warning:  Undefined array key "address" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 17
+[11-Nov-2025 16:06:37 UTC] PHP Warning:  Undefined array key "contact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 18
+[11-Nov-2025 16:06:37 UTC] PHP Warning:  Undefined array key "wcontact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 19
+[11-Nov-2025 16:06:37 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'fullname' cannot be null in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php:40
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/pitp_form.php(40): mysqli_stmt_execute()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 40
+[11-Nov-2025 16:06:40 UTC] PHP Warning:  Undefined array key "names" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 8
+[11-Nov-2025 16:06:40 UTC] PHP Warning:  Undefined array key "fname" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 9
+[11-Nov-2025 16:06:40 UTC] PHP Warning:  Undefined array key "cnic" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 10
+[11-Nov-2025 16:06:40 UTC] PHP Warning:  Undefined array key "email" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 11
+[11-Nov-2025 16:06:40 UTC] PHP Warning:  Undefined array key "qualification" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 12
+[11-Nov-2025 16:06:40 UTC] PHP Warning:  Undefined array key "domicile" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 13
+[11-Nov-2025 16:06:40 UTC] PHP Warning:  Undefined array key "course" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 14
+[11-Nov-2025 16:06:40 UTC] PHP Warning:  Undefined array key "DOB" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 15
+[11-Nov-2025 16:06:40 UTC] PHP Warning:  Undefined array key "gender" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 16
+[11-Nov-2025 16:06:40 UTC] PHP Warning:  Undefined array key "address" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 17
+[11-Nov-2025 16:06:40 UTC] PHP Warning:  Undefined array key "contact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 18
+[11-Nov-2025 16:06:40 UTC] PHP Warning:  Undefined array key "wcontact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 19
+[11-Nov-2025 16:06:40 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'fullname' cannot be null in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php:40
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/pitp_form.php(40): mysqli_stmt_execute()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 40
+[11-Nov-2025 16:10:48 UTC] PHP Warning:  Undefined array key "names" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 8
+[11-Nov-2025 16:10:48 UTC] PHP Warning:  Undefined array key "fname" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 9
+[11-Nov-2025 16:10:48 UTC] PHP Warning:  Undefined array key "cnic" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 10
+[11-Nov-2025 16:10:48 UTC] PHP Warning:  Undefined array key "email" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 11
+[11-Nov-2025 16:10:48 UTC] PHP Warning:  Undefined array key "qualification" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 12
+[11-Nov-2025 16:10:48 UTC] PHP Warning:  Undefined array key "domicile" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 13
+[11-Nov-2025 16:10:48 UTC] PHP Warning:  Undefined array key "course" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 14
+[11-Nov-2025 16:10:48 UTC] PHP Warning:  Undefined array key "DOB" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 15
+[11-Nov-2025 16:10:48 UTC] PHP Warning:  Undefined array key "gender" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 16
+[11-Nov-2025 16:10:48 UTC] PHP Warning:  Undefined array key "address" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 17
+[11-Nov-2025 16:10:48 UTC] PHP Warning:  Undefined array key "contact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 18
+[11-Nov-2025 16:10:48 UTC] PHP Warning:  Undefined array key "wcontact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 19
+[11-Nov-2025 16:10:48 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'fullname' cannot be null in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php:40
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/pitp_form.php(40): mysqli_stmt_execute()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 40
+[12-Nov-2025 07:14:40 UTC] PHP Warning:  Undefined array key "names" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 8
+[12-Nov-2025 07:14:40 UTC] PHP Warning:  Undefined array key "fname" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 9
+[12-Nov-2025 07:14:40 UTC] PHP Warning:  Undefined array key "cnic" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 10
+[12-Nov-2025 07:14:40 UTC] PHP Warning:  Undefined array key "email" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 11
+[12-Nov-2025 07:14:40 UTC] PHP Warning:  Undefined array key "qualification" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 12
+[12-Nov-2025 07:14:40 UTC] PHP Warning:  Undefined array key "domicile" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 13
+[12-Nov-2025 07:14:40 UTC] PHP Warning:  Undefined array key "course" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 14
+[12-Nov-2025 07:14:40 UTC] PHP Warning:  Undefined array key "DOB" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 15
+[12-Nov-2025 07:14:40 UTC] PHP Warning:  Undefined array key "gender" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 16
+[12-Nov-2025 07:14:40 UTC] PHP Warning:  Undefined array key "address" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 17
+[12-Nov-2025 07:14:40 UTC] PHP Warning:  Undefined array key "contact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 18
+[12-Nov-2025 07:14:40 UTC] PHP Warning:  Undefined array key "wcontact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 19
+[12-Nov-2025 07:14:40 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'fullname' cannot be null in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php:40
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/pitp_form.php(40): mysqli_stmt_execute()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 40
+[12-Nov-2025 07:14:40 UTC] PHP Warning:  Undefined array key "names" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 8
+[12-Nov-2025 07:14:40 UTC] PHP Warning:  Undefined array key "fname" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 9
+[12-Nov-2025 07:14:40 UTC] PHP Warning:  Undefined array key "cnic" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 10
+[12-Nov-2025 07:14:40 UTC] PHP Warning:  Undefined array key "email" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 11
+[12-Nov-2025 07:14:40 UTC] PHP Warning:  Undefined array key "qualification" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 12
+[12-Nov-2025 07:14:40 UTC] PHP Warning:  Undefined array key "domicile" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 13
+[12-Nov-2025 07:14:40 UTC] PHP Warning:  Undefined array key "course" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 14
+[12-Nov-2025 07:14:40 UTC] PHP Warning:  Undefined array key "DOB" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 15
+[12-Nov-2025 07:14:40 UTC] PHP Warning:  Undefined array key "gender" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 16
+[12-Nov-2025 07:14:40 UTC] PHP Warning:  Undefined array key "address" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 17
+[12-Nov-2025 07:14:40 UTC] PHP Warning:  Undefined array key "contact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 18
+[12-Nov-2025 07:14:40 UTC] PHP Warning:  Undefined array key "wcontact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 19
+[12-Nov-2025 07:14:40 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'fullname' cannot be null in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php:40
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/pitp_form.php(40): mysqli_stmt_execute()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 40
+[12-Nov-2025 07:14:40 UTC] PHP Warning:  Undefined array key "names" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 8
+[12-Nov-2025 07:14:40 UTC] PHP Warning:  Undefined array key "fname" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 9
+[12-Nov-2025 07:14:40 UTC] PHP Warning:  Undefined array key "cnic" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 10
+[12-Nov-2025 07:14:40 UTC] PHP Warning:  Undefined array key "email" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 11
+[12-Nov-2025 07:14:40 UTC] PHP Warning:  Undefined array key "qualification" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 12
+[12-Nov-2025 07:14:40 UTC] PHP Warning:  Undefined array key "domicile" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 13
+[12-Nov-2025 07:14:40 UTC] PHP Warning:  Undefined array key "course" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 14
+[12-Nov-2025 07:14:40 UTC] PHP Warning:  Undefined array key "DOB" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 15
+[12-Nov-2025 07:14:40 UTC] PHP Warning:  Undefined array key "gender" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 16
+[12-Nov-2025 07:14:40 UTC] PHP Warning:  Undefined array key "address" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 17
+[12-Nov-2025 07:14:40 UTC] PHP Warning:  Undefined array key "contact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 18
+[12-Nov-2025 07:14:40 UTC] PHP Warning:  Undefined array key "wcontact" in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 19
+[12-Nov-2025 07:14:40 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'fullname' cannot be null in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php:40
+Stack trace:
+#0 /home2/dsimtedu/public_html/Admission_Form/pitp_form.php(40): mysqli_stmt_execute()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/Admission_Form/pitp_form.php on line 40
+[07-Dec-2025 22:42:46 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'dsimtedu_AdminDB'@'localhost' (using password: YES) in /home2/dsimtedu/public_html/assets/Admission_Form/apply.php:3
+Stack trace:
+#0 /home2/dsimtedu/public_html/assets/Admission_Form/apply.php(3): mysqli_connect()
+#1 {main}
+  thrown in /home2/dsimtedu/public_html/assets/Admission_Form/apply.php on line 3
