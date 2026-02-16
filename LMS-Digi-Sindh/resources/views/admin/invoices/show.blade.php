@@ -22,6 +22,10 @@
                     <tr><th width="140">Student</th><td>{{ $invoice->user?->name ?? '—' }} ({{ $invoice->user?->email ?? '—' }})</td></tr>
                     <tr><th>Course</th><td>{{ $invoice->enrollment?->course?->name ?? '—' }}</td></tr>
                     <tr><th>Amount</th><td>Rs {{ number_format($invoice->amount, 0) }}</td></tr>
+                    @if(($invoice->discount_amount ?? 0) > 0)
+                    <tr><th>Discount</th><td class="text-success">- Rs {{ number_format($invoice->discount_amount, 0) }}</td></tr>
+                    <tr><th>Amount after discount</th><td>Rs {{ number_format($invoice->amount_after_discount, 0) }}</td></tr>
+                    @endif
                     <tr><th>Amount paid</th><td>Rs {{ number_format($invoice->amount_paid, 0) }}</td></tr>
                     <tr><th>Balance</th><td class="fw-bold">Rs {{ number_format($invoice->balance, 0) }}</td></tr>
                     <tr><th>Due date</th><td>{{ $invoice->due_date?->format('M j, Y') ?? '—' }}</td></tr>
@@ -38,6 +42,19 @@
                         <tr><th>Description</th><td>{{ $invoice->description }}</td></tr>
                     @endif
                 </table>
+                @if($invoice->balance > 0 && $invoice->status !== 'paid')
+                <hr>
+                <form method="post" action="{{ route('admin.invoices.apply-discount', $invoice) }}" class="row g-2 align-items-end">
+                    @csrf
+                    <div class="col-auto">
+                        <label for="discount_amount" class="form-label small mb-0">Apply discount (Rs)</label>
+                        <input type="number" name="discount_amount" id="discount_amount" class="form-control form-control-sm" min="0" max="{{ $invoice->amount }}" step="0.01" value="{{ $invoice->discount_amount ?? 0 }}" style="width:120px">
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-sm btn-outline-secondary">Apply</button>
+                    </div>
+                </form>
+                @endif
             </div>
         </div>
 

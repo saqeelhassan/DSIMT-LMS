@@ -14,13 +14,14 @@
                 <!-- Logo in sidebar -->
                 <div class="text-center py-3 border-bottom mb-3">
                     <a class="d-inline-block" href="{{ route('dashboard') }}">
-                        <img class="navbar-brand-item" src="{{ asset('dsimt/images/logo/logo1.png') }}" alt="Digital Sindh" style="max-height: 40px; width: auto;">
+                        <img class="navbar-brand-item" src="{{ asset('images/logo.png') }}" alt="Digital Sindh" style="max-height: 40px; width: auto;">
                     </a>
                 </div>
                 <!-- Dashboard menu -->
                 <div class="list-group list-group-borderless">
                     <a class="list-group-item list-group-item-light-sidebar sidebar-dashboard-link {{ request()->routeIs('instructor.dashboard') ? 'active' : '' }}" href="{{ route('instructor.dashboard') }}"><i class="bi bi-ui-checks-grid fa-fw me-2"></i>Dashboard</a>
                     <a class="list-group-item list-group-item-light-sidebar {{ request()->routeIs('instructor.manage-course') ? 'active' : '' }}" href="{{ route('instructor.manage-course') }}"><i class="bi bi-basket fa-fw me-2"></i>My Courses</a>
+                    <a class="list-group-item list-group-item-light-sidebar {{ request()->routeIs('instructor.batches.*') ? 'active' : '' }}" href="{{ route('instructor.batches.index') }}"><i class="bi bi-people fa-fw me-2"></i>My Batches</a>
                     <a class="list-group-item list-group-item-light-sidebar {{ request()->routeIs('instructor.courses.create') ? 'active' : '' }}" href="{{ route('instructor.courses.create') }}"><i class="bi bi-file-earmark-plus fa-fw me-2"></i>Create Course</a>
                     <a class="list-group-item list-group-item-light-sidebar" href="{{ route('courses.index') }}"><i class="bi bi-file-check fa-fw me-2"></i>Courses</a>
                     <div class="list-group-item list-group-item-light-sidebar text-danger bg-danger-soft-hover border-0 pt-2">

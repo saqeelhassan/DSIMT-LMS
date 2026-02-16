@@ -52,6 +52,24 @@ class Batch extends Model
         return $this->hasMany(Enrollment::class);
     }
 
+    /**
+     * Academic attendance records for this batch (per student per date).
+     */
+    public function studentAttendances(): HasMany
+    {
+        return $this->hasMany(StudentAttendance::class, 'batch_id');
+    }
+
+    public function exams(): HasMany
+    {
+        return $this->hasMany(Exam::class);
+    }
+
+    public function assignments(): HasMany
+    {
+        return $this->hasMany(Assignment::class);
+    }
+
     public static function dayNames(): array
     {
         return ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\AttendanceReportController as AdminAttendanceReportController;
 use App\Http\Controllers\Admin\BatchController as AdminBatchController;
 use App\Http\Controllers\Admin\BroadcastController as AdminBroadcastController;
 use App\Http\Controllers\Admin\CourseController as AdminCourseController;
@@ -14,11 +15,13 @@ use App\Http\Controllers\AccountController;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\DSIMTController;
+use App\Http\Controllers\DSIMTWebsiteController;
 use App\Http\Controllers\EnrollmentController;
-use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Instructor\AssignmentController as InstructorAssignmentController;
 use App\Http\Controllers\Instructor\AttendanceController as InstructorAttendanceController;
+use App\Http\Controllers\Instructor\BatchAttendanceController as InstructorBatchAttendanceController;
+use App\Http\Controllers\Instructor\BatchController as InstructorBatchController;
+use App\Http\Controllers\Instructor\CheckInController as InstructorCheckInController;
 use App\Http\Controllers\Instructor\ContentController as InstructorContentController;
 use App\Http\Controllers\Instructor\CourseController as InstructorCourseController;
 use App\Http\Controllers\Instructor\DashboardController as InstructorDashboardController;
@@ -26,10 +29,13 @@ use App\Http\Controllers\Instructor\ExamController as InstructorExamController;
 use App\Http\Controllers\Instructor\ProgressController as InstructorProgressController;
 use App\Http\Controllers\Staff\DashboardController as StaffDashboardController;
 use App\Http\Controllers\Student\AssignmentController as StudentAssignmentController;
+use App\Http\Controllers\Student\AttendanceController as StudentAttendanceController;
 use App\Http\Controllers\Student\ClassroomController as StudentClassroomController;
 use App\Http\Controllers\Student\DashboardController as StudentDashboardController;
 use App\Http\Controllers\Student\ExamController as StudentExamController;
+use App\Http\Controllers\Student\LiveClassController as StudentLiveClassController;
 use App\Http\Controllers\Student\ProfileController as StudentProfileController;
+use App\Http\Controllers\Student\QrAttendanceController as StudentQrAttendanceController;
 use App\Http\Controllers\Student\QuizController as StudentQuizController;
 use App\Http\Controllers\SuperAdmin\DashboardController as SuperAdminDashboardController;
 use App\Http\Controllers\SuperAdmin\AuditLogController as SuperAdminAuditLogController;
@@ -47,8 +53,34 @@ use Illuminate\Support\Facades\Route;
 |--------------------------------------------------------------------------
 */
 
-// Home - DSIMT Main Website (default)
-Route::get('/', [DSIMTController::class, 'index'])->name('index');
+// Home - DSIMT website
+Route::get('/', [DSIMTWebsiteController::class, 'index'])->name('index');
+
+/*
+|--------------------------------------------------------------------------
+| DSIMT Website
+|--------------------------------------------------------------------------
+*/
+Route::prefix('dsimt')->name('dsimt.')->group(function () {
+    Route::get('/', [DSIMTWebsiteController::class, 'index'])->name('index');
+    Route::get('/about', [DSIMTWebsiteController::class, 'about'])->name('about');
+    Route::get('/contact', [DSIMTWebsiteController::class, 'contact'])->name('contact');
+    Route::get('/course', [DSIMTWebsiteController::class, 'course'])->name('course');
+    Route::get('/course/{course}', [DSIMTWebsiteController::class, 'courseDetail'])->name('course.detail');
+    Route::get('/event', [DSIMTWebsiteController::class, 'event'])->name('event');
+    Route::get('/event/{event}', [DSIMTWebsiteController::class, 'eventDetail'])->name('event.detail');
+    Route::get('/blog', [DSIMTWebsiteController::class, 'blogList'])->name('blog');
+    Route::get('/blog/{post}', [DSIMTWebsiteController::class, 'blogDetail'])->name('blog.detail');
+    Route::get('/gallery', [DSIMTWebsiteController::class, 'gallery'])->name('gallery');
+    Route::get('/instructors', [DSIMTWebsiteController::class, 'instructors'])->name('instructors');
+    Route::get('/pricing', [DSIMTWebsiteController::class, 'pricing'])->name('pricing');
+    Route::get('/testimonial', [DSIMTWebsiteController::class, 'testimonial'])->name('testimonial');
+    Route::get('/faq', [DSIMTWebsiteController::class, 'faq'])->name('faq');
+    Route::get('/search', [DSIMTWebsiteController::class, 'search'])->name('search');
+    Route::get('/search-detail', [DSIMTWebsiteController::class, 'searchDetail'])->name('search-detail');
+    Route::get('/comming', [DSIMTWebsiteController::class, 'commingSoon'])->name('comming');
+    Route::get('/404', [DSIMTWebsiteController::class, 'error404'])->name('404');
+});
 
 // LMS entry - redirect to login
 Route::get('/lms', fn () => redirect()->route('login'))->name('lms.index');
@@ -106,6 +138,9 @@ Route::prefix('super-admin')->name('super-admin.')->middleware(['auth', 'role:Su
     Route::get('/expenses', [SuperAdminExpenseController::class, 'index'])->name('expenses.index');
     Route::get('/expenses/create', [SuperAdminExpenseController::class, 'create'])->name('expenses.create');
     Route::post('/expenses', [SuperAdminExpenseController::class, 'store'])->name('expenses.store');
+    Route::get('/expenses/{expense}/edit', [SuperAdminExpenseController::class, 'edit'])->name('expenses.edit');
+    Route::put('/expenses/{expense}', [SuperAdminExpenseController::class, 'update'])->name('expenses.update');
+    Route::delete('/expenses/{expense}', [SuperAdminExpenseController::class, 'destroy'])->name('expenses.destroy');
     Route::get('/audit-logs', [SuperAdminAuditLogController::class, 'index'])->name('audit-logs.index');
     Route::post('/users/{user}/block', [SuperAdminUserController::class, 'block'])->name('users.block');
     Route::post('/users/{user}/unblock', [SuperAdminUserController::class, 'unblock'])->name('users.unblock');
@@ -124,6 +159,8 @@ Route::post('/courses/{course}/enroll', [EnrollmentController::class, 'store'])-
 Route::prefix('admin')->name('admin.')->middleware(['auth', 'role:Admin,Staff,SuperAdmin'])->group(function () {
     Route::get('/', [AdminDashboardController::class, 'index'])->name('dashboard');
     Route::get('/enrollments', [AdminEnrollmentController::class, 'index'])->name('enrollments.index')->middleware('admin.permission:enrollments.view');
+    Route::post('/enrollments/{enrollment}/approve', [AdminEnrollmentController::class, 'approve'])->name('enrollments.approve')->middleware('admin.permission:enrollments.view');
+    Route::post('/enrollments/{enrollment}/reject', [AdminEnrollmentController::class, 'reject'])->name('enrollments.reject')->middleware('admin.permission:enrollments.view');
     Route::get('/users', [AdminUserController::class, 'index'])->name('users.index')->middleware('admin.permission:users.view');
     Route::get('/courses', [AdminCourseController::class, 'index'])->name('courses.index')->middleware('admin.permission:courses.manage');
     Route::get('/courses/create', [AdminCourseController::class, 'create'])->name('courses.create')->middleware('admin.permission:courses.create');
@@ -144,12 +181,15 @@ Route::prefix('admin')->name('admin.')->middleware(['auth', 'role:Admin,Staff,Su
     Route::get('/batches/{batch}/timetable', [AdminBatchController::class, 'timetable'])->name('batches.timetable')->middleware('admin.permission:batches.manage');
     Route::post('/batches/{batch}/timetable', [AdminBatchController::class, 'timetable'])->name('batches.timetable.store')->middleware('admin.permission:batches.manage');
 
+    Route::get('/fee-management', [\App\Http\Controllers\Admin\FeeManagementController::class, 'index'])->name('fee-management.index')->middleware('admin.permission:fees.manage');
     Route::get('/invoices', [AdminInvoiceController::class, 'index'])->name('invoices.index')->middleware('admin.permission:fees.manage');
     Route::post('/invoices/generate-vouchers', [AdminInvoiceController::class, 'generateVouchers'])->name('invoices.generate-vouchers')->middleware('admin.permission:fees.manage');
     Route::get('/invoices/create', [AdminInvoiceController::class, 'create'])->name('invoices.create')->middleware('admin.permission:fees.manage');
     Route::post('/invoices', [AdminInvoiceController::class, 'store'])->name('invoices.store')->middleware('admin.permission:fees.manage');
     Route::get('/invoices/{invoice}', [AdminInvoiceController::class, 'show'])->name('invoices.show')->middleware('admin.permission:fees.manage');
     Route::post('/invoices/{invoice}/payment', [AdminInvoiceController::class, 'recordPayment'])->name('invoices.record-payment')->middleware('admin.permission:fees.manage');
+    Route::post('/invoices/{invoice}/discount', [AdminInvoiceController::class, 'applyDiscount'])->name('invoices.apply-discount')->middleware('admin.permission:fees.manage');
+    Route::post('/invoices/{invoice}/remind', [AdminInvoiceController::class, 'remind'])->name('invoices.remind')->middleware('admin.permission:fees.manage');
 
     Route::get('/defaulters', [AdminDefaulterController::class, 'index'])->name('defaulters.index')->middleware('admin.permission:fees.manage');
     Route::post('/defaulters/{user}/disable', [AdminDefaulterController::class, 'disableAccess'])->name('defaulters.disable')->middleware('admin.permission:fees.manage');
@@ -166,6 +206,11 @@ Route::prefix('admin')->name('admin.')->middleware(['auth', 'role:Admin,Staff,Su
     Route::get('/broadcasts', [AdminBroadcastController::class, 'index'])->name('broadcasts.index')->middleware('admin.permission:notifications.manage');
     Route::get('/broadcasts/create', [AdminBroadcastController::class, 'create'])->name('broadcasts.create')->middleware('admin.permission:notifications.manage');
     Route::post('/broadcasts', [AdminBroadcastController::class, 'store'])->name('broadcasts.store')->middleware('admin.permission:notifications.manage');
+
+    Route::get('/attendance', [AdminAttendanceReportController::class, 'index'])->name('attendance.index')->middleware('admin.permission:batches.manage');
+    Route::get('/attendance/payroll-csv', [AdminAttendanceReportController::class, 'payrollCsv'])->name('attendance.payroll-csv')->middleware('admin.permission:batches.manage');
+    Route::get('/attendance/{attendance}/edit', [AdminAttendanceReportController::class, 'edit'])->name('attendance.edit')->middleware('admin.permission:batches.manage');
+    Route::put('/attendance/{attendance}', [AdminAttendanceReportController::class, 'update'])->name('attendance.update')->middleware('admin.permission:batches.manage');
 });
 
 // Staff (Staff or SuperAdmin)
@@ -176,6 +221,13 @@ Route::prefix('staff')->name('staff.')->middleware(['auth', 'role:Staff,SuperAdm
 // Instructor (teach courses; Instructor, Admin, or SuperAdmin)
 Route::prefix('instructor')->name('instructor.')->middleware(['auth', 'role:Instructor,Admin,SuperAdmin'])->group(function () {
     Route::get('/', [InstructorDashboardController::class, 'index'])->name('dashboard');
+    Route::post('/check-in', [InstructorCheckInController::class, 'checkIn'])->name('check-in');
+    Route::post('/check-out', [InstructorCheckInController::class, 'checkOut'])->name('check-out');
+    Route::get('/batches', [InstructorBatchController::class, 'index'])->name('batches.index');
+    Route::get('/batches/{batch}/attendance', [InstructorBatchAttendanceController::class, 'index'])->name('batches.attendance.index');
+    Route::get('/batches/{batch}/attendance/take', [InstructorBatchAttendanceController::class, 'take'])->name('batches.attendance.take');
+    Route::post('/batches/{batch}/attendance', [InstructorBatchAttendanceController::class, 'store'])->name('batches.attendance.store');
+    Route::get('/batches/{batch}/attendance/{date}', [InstructorBatchAttendanceController::class, 'view'])->name('batches.attendance.view');
     Route::get('/courses', [InstructorCourseController::class, 'index'])->name('manage-course');
     Route::get('/courses/create', [InstructorCourseController::class, 'create'])->name('courses.create');
     Route::post('/courses', [InstructorCourseController::class, 'store'])->name('courses.store');
@@ -185,6 +237,11 @@ Route::prefix('instructor')->name('instructor.')->middleware(['auth', 'role:Inst
     Route::get('/courses/{course}/exams', [InstructorExamController::class, 'index'])->name('exams.index');
     Route::get('/courses/{course}/exams/create', [InstructorExamController::class, 'create'])->name('exams.create');
     Route::post('/courses/{course}/exams', [InstructorExamController::class, 'store'])->name('exams.store');
+    Route::get('/courses/{course}/exams/{exam}/questions', [InstructorExamController::class, 'questionsIndex'])->name('exams.questions.index');
+    Route::post('/courses/{course}/exams/{exam}/questions', [InstructorExamController::class, 'questionStore'])->name('exams.questions.store');
+    Route::get('/courses/{course}/exams/{exam}/questions/{question}/edit', [InstructorExamController::class, 'questionEdit'])->name('exams.questions.edit');
+    Route::put('/courses/{course}/exams/{exam}/questions/{question}', [InstructorExamController::class, 'questionUpdate'])->name('exams.questions.update');
+    Route::delete('/courses/{course}/exams/{exam}/questions/{question}', [InstructorExamController::class, 'questionDestroy'])->name('exams.questions.destroy');
     Route::get('/courses/{course}/exams/{exam}/submissions', [InstructorExamController::class, 'submissions'])->name('exams.submissions');
     Route::get('/courses/{course}/exams/{exam}/mark/{user}', [InstructorExamController::class, 'markForm'])->name('exams.mark-form');
     Route::post('/courses/{course}/exams/{exam}/mark/{user}', [InstructorExamController::class, 'mark'])->name('exams.mark');
@@ -208,8 +265,9 @@ Route::prefix('instructor')->name('instructor.')->middleware(['auth', 'role:Inst
     Route::get('/courses/{course}/progress', [InstructorProgressController::class, 'index'])->name('progress.index');
 });
 
-// Student (Student or SuperAdmin)
-Route::prefix('student')->name('student.')->middleware(['auth', 'role:Student,SuperAdmin'])->group(function () {
+// Student (Student or SuperAdmin) — gatekeeper: student.access redirects to pay-wall if no valid access
+Route::prefix('student')->name('student.')->middleware(['auth', 'role:Student,SuperAdmin', 'student.access'])->group(function () {
+    Route::get('/payment-required', \App\Http\Controllers\Student\PaymentRequiredController::class)->name('payment-required');
     Route::get('/', [StudentDashboardController::class, 'index'])->name('dashboard');
     Route::get('/courses', [StudentDashboardController::class, 'courseList'])->name('courses');
     Route::get('/course-resume', [StudentDashboardController::class, 'courseResume'])->name('course-resume');
@@ -229,33 +287,11 @@ Route::prefix('student')->name('student.')->middleware(['auth', 'role:Student,Su
     Route::post('/classroom/record-progress', [StudentClassroomController::class, 'recordProgress'])->name('classroom.record-progress');
     Route::get('/id-card', [StudentProfileController::class, 'idCard'])->name('id-card');
     Route::get('/fee-status', [StudentProfileController::class, 'feeStatus'])->name('fee-status');
+    Route::post('/invoices/{invoice}/upload-receipt', [StudentProfileController::class, 'uploadReceipt'])->name('invoices.upload-receipt');
+    Route::get('/attendance', [StudentAttendanceController::class, 'index'])->name('attendance.index');
     Route::get('/certificates', [StudentProfileController::class, 'certificates'])->name('certificates');
     Route::get('/certificates/{enrollment}', [StudentProfileController::class, 'certificateShow'])->name('certificates.show');
-});
-
-/*
-|--------------------------------------------------------------------------
-| Digital Sindh Institute (DSIMT) Main Website
-|--------------------------------------------------------------------------
-*/
-Route::prefix('dsimt')->name('dsimt.')->group(function () {
-    Route::get('/', [DSIMTController::class, 'index'])->name('index');
-    Route::get('/about-us', [DSIMTController::class, 'aboutUs'])->name('about-us');
-    Route::get('/contact', [DSIMTController::class, 'contact'])->name('contact');
-    Route::get('/courses', fn () => redirect()->route('courses.index'))->name('courses');
-    Route::get('/board-courses', [DSIMTController::class, 'boardCourses'])->name('board-courses');
-    Route::get('/special-course', [DSIMTController::class, 'specialCourse'])->name('special-course');
-    Route::get('/scholarship-course', [DSIMTController::class, 'scholarshipCourse'])->name('scholarship-course');
-    Route::get('/merit-scholarship', [DSIMTController::class, 'meritScholarship'])->name('merit-scholarship');
-    Route::get('/merit-internships', [DSIMTController::class, 'meritInternships'])->name('merit-internships');
-    Route::get('/events', [DSIMTController::class, 'events'])->name('events');
-    Route::get('/gallery', [DSIMTController::class, 'gallery'])->name('gallery');
-    Route::get('/services', [DSIMTController::class, 'services'])->name('services');
-    Route::get('/coming-soon/{id?}', [DSIMTController::class, 'comingSoon'])->name('coming-soon');
-    Route::get('/admission/pitp-form', [DSIMTController::class, 'admissionPitpForm'])->name('admission-pitp-form');
-    Route::get('/admission/apply', [DSIMTController::class, 'admissionApply'])->name('admission-apply');
-    Route::get('/admission/join-us', [DSIMTController::class, 'admissionJoinUs'])->name('admission-join-us');
-    Route::get('/404', [DSIMTController::class, 'error404'])->name('404');
-    Route::get('/login', [DSIMTController::class, 'login'])->name('login');
-    Route::get('/registration', [DSIMTController::class, 'registration'])->name('registration');
+    Route::get('/attendance/qr/{batch}', [StudentQrAttendanceController::class, 'show'])->name('attendance.qr')->middleware('signed');
+    Route::post('/attendance/qr-mark', [StudentQrAttendanceController::class, 'mark'])->name('attendance.qr-mark');
+    Route::get('/live-join/{batch}', [StudentLiveClassController::class, 'join'])->name('live-join');
 });

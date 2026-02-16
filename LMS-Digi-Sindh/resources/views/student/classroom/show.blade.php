@@ -9,7 +9,12 @@
             <p class="mb-0 text-body">Watch lectures, download notes, join live class.</p>
         </div>
         @if($course->live_class_url)
-            <a href="{{ $course->live_class_url }}" target="_blank" class="btn btn-danger"><i class="bi bi-camera-video me-1"></i>Join Live Class</a>
+            @if(isset($primaryBatch) && $primaryBatch)
+                <a href="{{ route('student.live-join', $primaryBatch) }}" target="_blank" class="btn btn-danger"><i class="bi bi-camera-video me-1"></i>Join Live Class</a>
+                <small class="d-block text-body-secondary mt-1">Attendance is recorded; stay 15+ min to be marked Present.</small>
+            @else
+                <a href="{{ $course->live_class_url }}" target="_blank" class="btn btn-danger"><i class="bi bi-camera-video me-1"></i>Join Live Class</a>
+            @endif
         @endif
     </div>
 

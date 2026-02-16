@@ -116,6 +116,30 @@ class User extends Authenticatable
     }
 
     /**
+     * Academic attendance records when this user is a student.
+     */
+    public function studentAttendances(): HasMany
+    {
+        return $this->hasMany(StudentAttendance::class, 'student_id');
+    }
+
+    /**
+     * Payroll attendance records when this user is an instructor.
+     */
+    public function instructorAttendances(): HasMany
+    {
+        return $this->hasMany(InstructorAttendance::class, 'instructor_id');
+    }
+
+    /**
+     * Batches taught by this user (when they are the instructor).
+     */
+    public function instructorBatches(): HasMany
+    {
+        return $this->hasMany(Batch::class, 'instructor_id');
+    }
+
+    /**
      * Admin-only: permissions assigned by Super Admin (only for role Admin).
      */
     public function adminPermissions(): HasMany

@@ -10,6 +10,8 @@ class Assignment extends Model
 {
     protected $fillable = [
         'course_id',
+        'batch_id',
+        'instructor_id',
         'title',
         'description',
         'problem_file_path',
@@ -26,6 +28,16 @@ class Assignment extends Model
     public function course(): BelongsTo
     {
         return $this->belongsTo(Course::class);
+    }
+
+    public function batch(): BelongsTo
+    {
+        return $this->belongsTo(Batch::class);
+    }
+
+    public function instructor(): BelongsTo
+    {
+        return $this->belongsTo(User::class, 'instructor_id');
     }
 
     public function creator(): BelongsTo

@@ -16,6 +16,23 @@
             <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
         </div>
     @endif
+    @if(session('warning'))
+        <div class="alert alert-warning alert-dismissible fade show">{{ session('warning') }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    @endif
+
+    @if(isset($batches) && $batches->isNotEmpty())
+    <form method="get" class="mb-3 d-flex align-items-center gap-2 flex-wrap">
+        <label class="mb-0">Filter by batch:</label>
+        <select name="batch_id" class="form-select form-select-sm w-auto" onchange="this.form.submit()">
+            <option value="">All batches</option>
+            @foreach($batches as $b)
+                <option value="{{ $b->id }}" {{ request('batch_id') == $b->id ? 'selected' : '' }}>{{ $b->name }}</option>
+            @endforeach
+        </select>
+    </form>
+    @endif
 
     <div class="card border rounded-3">
         <div class="card-body">
@@ -24,8 +41,10 @@
                     <thead>
                         <tr>
                             <th>Exam</th>
+                            <th>Batch</th>
                             <th>Total marks</th>
-                            <th>Due date</th>
+                            <th>Start / Due</th>
+                            <th>Status</th>
                             <th>Submissions</th>
                             <th>Actions</th>
                         </tr>
@@ -37,16 +56,19 @@
                                 <h6 class="mb-0">{{ $exam->title }}</h6>
                                 @if($exam->description)<small class="text-body">{{ Str::limit($exam->description, 60) }}</small>@endif
                             </td>
-                            <td>{{ $exam->total_marks }}</td>
-                            <td>{{ $exam->due_date?->format('M d, Y') ?? '—' }}</td>
+                            <td>{{ $exam->batch?->name ?? '—' }}</td>
+                            <td>{{ $exam->isMcq() ? $exam->total_marks_from_questions : $exam->total_marks }}</td>
+                            <td>{{ $exam->start_datetime?->format('M d, H:i') ?? $exam->due_date?->format('M d, Y') ?? '—' }}</td>
+                            <td><span class="badge bg-secondary">{{ $exam->status ?? 'draft' }}</span></td>
                             <td>{{ $exam->submissions_count }}</td>
                             <td>
+                                <a href="{{ route('instructor.exams.questions.index', [$course, $exam]) }}" class="btn btn-sm btn-outline-secondary me-1">MCQ</a>
                                 <a href="{{ route('instructor.exams.submissions', [$course, $exam]) }}" class="btn btn-sm btn-outline-primary">View & mark</a>
                             </td>
                         </tr>
                         @empty
                         <tr>
-                            <td colspan="5" class="text-center py-4 text-body">No exams yet. <a href="{{ route('instructor.exams.create', $course) }}">Create an exam</a>.</td>
+                            <td colspan="7" class="text-center py-4 text-body">No exams yet. <a href="{{ route('instructor.exams.create', $course) }}">Create an exam</a>.</td>
                         </tr>
                         @endforelse
                     </tbody>

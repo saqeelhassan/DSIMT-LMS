@@ -31,6 +31,7 @@ class EnrollmentController extends Controller
             'course_id' => $course->id,
             'payment_method_id' => $validated['payment_method_id'] ?? null,
             'payment_status' => $validated['payment_status'] ?? 'pending',
+            'enrollment_status' => 'pending_approval',
         ]);
 
         return redirect()

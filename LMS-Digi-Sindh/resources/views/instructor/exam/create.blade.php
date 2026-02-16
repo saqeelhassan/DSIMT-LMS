@@ -19,6 +19,16 @@
             <form method="post" action="{{ route('instructor.exams.store', $course) }}">
                 @csrf
                 <div class="mb-3">
+                    <label for="batch_id" class="form-label">Batch *</label>
+                    <select name="batch_id" id="batch_id" class="form-select" required>
+                        <option value="">Select batch</option>
+                        @foreach($batches as $b)
+                            <option value="{{ $b->id }}" {{ old('batch_id') == $b->id ? 'selected' : '' }}>{{ $b->name }}</option>
+                        @endforeach
+                    </select>
+                    <small class="text-muted">Only students in this batch will see this exam.</small>
+                </div>
+                <div class="mb-3">
                     <label for="title" class="form-label">Exam title *</label>
                     <input type="text" name="title" id="title" class="form-control" value="{{ old('title') }}" required maxlength="255">
                 </div>
@@ -36,9 +46,29 @@
                         <input type="number" name="passing_marks" id="passing_marks" class="form-control" value="{{ old('passing_marks') }}" min="0">
                     </div>
                 </div>
-                <div class="mb-4">
-                    <label for="due_date" class="form-label">Due date (optional)</label>
-                    <input type="date" name="due_date" id="due_date" class="form-control" value="{{ old('due_date') }}">
+                <div class="row g-3 mb-3">
+                    <div class="col-md-6">
+                        <label for="duration_minutes" class="form-label">Duration (minutes, optional)</label>
+                        <input type="number" name="duration_minutes" id="duration_minutes" class="form-control" value="{{ old('duration_minutes') }}" min="1" max="480" placeholder="e.g. 60">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="start_datetime" class="form-label">Start date & time (optional)</label>
+                        <input type="datetime-local" name="start_datetime" id="start_datetime" class="form-control" value="{{ old('start_datetime') }}">
+                    </div>
+                </div>
+                <div class="row g-3 mb-3">
+                    <div class="col-md-6">
+                        <label for="due_date" class="form-label">Due date (optional)</label>
+                        <input type="date" name="due_date" id="due_date" class="form-control" value="{{ old('due_date') }}">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="status" class="form-label">Status</label>
+                        <select name="status" id="status" class="form-select">
+                            <option value="draft" {{ old('status', 'draft') === 'draft' ? 'selected' : '' }}>Draft</option>
+                            <option value="published" {{ old('status') === 'published' ? 'selected' : '' }}>Published</option>
+                            <option value="completed" {{ old('status') === 'completed' ? 'selected' : '' }}>Completed</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="d-flex gap-2">
                     <button type="submit" class="btn btn-primary">Create exam</button>

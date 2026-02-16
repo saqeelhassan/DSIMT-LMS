@@ -52,7 +52,7 @@
                         accepted. Also, make sure your <a href="#">Payment and Tax information</a> is correct and
                         valid.</p>
 
-                    <a href="{{ route('index') }}" class="btn btn-primary-soft mb-5">Back to Homepage</a>
+                    <a href="{{ route('courses.index') }}" class="btn btn-primary-soft mb-5">Back to Courses</a>
                 </div>
             </div>
         </div>

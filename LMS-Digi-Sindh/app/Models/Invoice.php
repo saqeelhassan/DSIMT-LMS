@@ -13,16 +13,25 @@ class Invoice extends Model
         'user_id',
         'enrollment_id',
         'amount',
+        'discount_amount',
         'amount_paid',
         'due_date',
         'billing_month',
         'status',
         'description',
+        'proof_image_path',
         'created_by',
     ];
 
+    public const STATUS_PENDING = 'pending';
+    public const STATUS_VERIFICATION_PENDING = 'verification_pending';
+    public const STATUS_PARTIAL = 'partial';
+    public const STATUS_PAID = 'paid';
+    public const STATUS_OVERDUE = 'overdue';
+
     protected $casts = [
         'amount' => 'decimal:2',
+        'discount_amount' => 'decimal:2',
         'amount_paid' => 'decimal:2',
         'due_date' => 'date',
         'billing_month' => 'date',
@@ -54,8 +63,15 @@ class Invoice extends Model
         return $this->belongsTo(User::class, 'created_by');
     }
 
+    /** Amount due after discount (balance before payments). */
+    public function getAmountAfterDiscountAttribute(): float
+    {
+        return (float) max(0, $this->amount - ($this->discount_amount ?? 0));
+    }
+
+    /** Remaining balance to pay (after discount and payments). */
     public function getBalanceAttribute(): float
     {
-        return (float) max(0, $this->amount - $this->amount_paid);
+        return (float) max(0, $this->amount_after_discount - $this->amount_paid);
     }
 }

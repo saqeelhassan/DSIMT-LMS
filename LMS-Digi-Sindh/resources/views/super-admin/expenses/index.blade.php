@@ -45,10 +45,14 @@
                     <tr>
                         <th>Date</th>
                         <th>Type</th>
+                        <th>Name</th>
                         <th>Description</th>
                         <th>Branch</th>
                         <th>Amount</th>
                         <th>Recorded By</th>
+                        @if(auth()->user()->role?->name === 'SuperAdmin')
+                        <th class="text-end">Actions</th>
+                        @endif
                     </tr>
                 </thead>
                 <tbody>
@@ -56,13 +60,24 @@
                     <tr>
                         <td>{{ $e->expense_date->format('M d, Y') }}</td>
                         <td><span class="badge bg-secondary">{{ str_replace('_', ' ', ucfirst($e->type)) }}</span></td>
+                        <td>{{ $e->payee_name ?? '—' }}</td>
                         <td>{{ Str::limit($e->description ?? '—', 40) }}</td>
                         <td>{{ $e->branch?->name ?? '—' }}</td>
                         <td><strong>{{ number_format($e->amount) }} {{ \App\Models\Setting::get('currency', 'PKR') }}</strong></td>
                         <td>{{ $e->recorder?->name ?? '—' }}</td>
+                        @if(auth()->user()->role?->name === 'SuperAdmin')
+                        <td class="text-end">
+                            <a href="{{ route('super-admin.expenses.edit', $e) }}" class="btn btn-sm btn-outline-primary">Edit</a>
+                            <form method="post" action="{{ route('super-admin.expenses.destroy', $e) }}" class="d-inline" onsubmit="return confirm('Delete this expense?');">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-sm btn-outline-danger">Delete</button>
+                            </form>
+                        </td>
+                        @endif
                     </tr>
                     @empty
-                    <tr><td colspan="6" class="text-center py-4 text-body">No expenses recorded. <a href="{{ route('super-admin.expenses.create') }}">Record one</a>.</td></tr>
+                    <tr><td colspan="{{ auth()->user()->role?->name === 'SuperAdmin' ? 8 : 7 }}" class="text-center py-4 text-body">No expenses recorded. <a href="{{ route('super-admin.expenses.create') }}">Record one</a>.</td></tr>
                     @endforelse
                 </tbody>
             </table>

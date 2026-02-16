@@ -25,7 +25,7 @@
                     <thead>
                         <tr>
                             <th>Exam</th>
-                            <th>Course</th>
+                            <th>Course / Batch</th>
                             <th>Total marks</th>
                             <th>Due date</th>
                             <th>Status</th>
@@ -40,12 +40,12 @@
                                 <h6 class="mb-0">{{ $exam->title }}</h6>
                                 @if($exam->description)<small class="text-body">{{ Str::limit($exam->description, 50) }}</small>@endif
                             </td>
-                            <td>{{ $exam->course->name ?? '—' }}</td>
-                            <td>{{ $exam->total_marks }}</td>
+                            <td>{{ $exam->course->name ?? '—' }}@if($exam->batch) <span class="text-muted">({{ $exam->batch->name }})</span>@endif</td>
+                            <td>{{ $exam->isMcq() ? $exam->total_marks_from_questions : $exam->total_marks }}</td>
                             <td>{{ $exam->due_date?->format('M d, Y') ?? '—' }}</td>
                             <td>
                                 @if($mySub && $mySub->status === 'marked')
-                                    <span class="badge bg-success">Marked ({{ $mySub->marks_obtained }}/{{ $exam->total_marks }})</span>
+                                    <span class="badge bg-success">Marked ({{ $mySub->marks_obtained }}/{{ $exam->isMcq() ? $exam->total_marks_from_questions : $exam->total_marks }})</span>
                                 @elseif($mySub && $mySub->status === 'submitted')
                                     <span class="badge bg-info">Pending</span>
                                 @else

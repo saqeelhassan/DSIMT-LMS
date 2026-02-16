@@ -17,7 +17,7 @@
                     <div class="d-flex justify-content-center">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb breadcrumb-dark breadcrumb-dots mb-0">
-                                <li class="breadcrumb-item"><a href="{{ route('index') }}">Home</a></li>
+                                <li class="breadcrumb-item"><a href="{{ route('login') }}">Home</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">All courses</li>
                             </ol>
                         </nav>

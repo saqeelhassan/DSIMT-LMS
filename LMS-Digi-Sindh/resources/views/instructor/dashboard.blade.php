@@ -4,6 +4,64 @@
 <!-- Main content START -->
 <div class="col-xl-9">
 
+    @if(session('success'))
+        <div class="alert alert-success alert-dismissible fade show" role="alert">{{ session('success') }}<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>
+    @endif
+    @if(session('error'))
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">{{ session('error') }}<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>
+    @endif
+
+    <!-- Instructor attendance (check-in / check-out) START -->
+    <div class="card border rounded-3 mb-4">
+        <div class="card-body p-4">
+            <h5 class="card-title mb-3"><i class="bi bi-clock-history me-2"></i>My attendance today</h5>
+            @if($todayAttendance)
+                <p class="mb-2 text-body">
+                    @if($todayAttendance->check_in_time)
+                        <span class="text-success fw-semibold">Checked in</span> at {{ $todayAttendance->check_in_time->format('g:i A') }}.
+                    @endif
+                    @if($todayAttendance->check_out_time)
+                        <span class="text-primary fw-semibold">Checked out</span> at {{ $todayAttendance->check_out_time->format('g:i A') }}.
+                        @if($todayAttendance->worked_minutes)
+                            <span class="d-block small mt-1">Total: {{ floor($todayAttendance->worked_minutes / 60) }}h {{ $todayAttendance->worked_minutes % 60 }}m</span>
+                        @endif
+                    @endif
+                </p>
+                <div class="d-flex gap-2 flex-wrap">
+                    @if(!$todayAttendance->check_in_time)
+                        <form method="post" action="{{ route('instructor.check-in') }}" class="d-inline">
+                            @csrf
+                            <button type="submit" class="btn btn-success btn-lg" {{ $checkInAllowed ? '' : 'disabled title="Check-in only allowed from institute network"' }}>
+                                <i class="bi bi-box-arrow-in-right me-2"></i>Check In
+                            </button>
+                        </form>
+                    @endif
+                    @if($todayAttendance->check_in_time && !$todayAttendance->check_out_time)
+                        <form method="post" action="{{ route('instructor.check-out') }}" class="d-inline">
+                            @csrf
+                            <button type="submit" class="btn btn-outline-primary btn-lg"><i class="bi bi-box-arrow-right me-2"></i>Check Out</button>
+                        </form>
+                    @endif
+                </div>
+                @if(!$checkInAllowed && !$todayAttendance->check_in_time)
+                    <p class="small text-warning mb-0 mt-2">Check-in is restricted to institute Wi‑Fi. Ask admin to add your IP to allowed list if you are on-site.</p>
+                @endif
+            @else
+                <p class="mb-2 text-body">You have not checked in today.</p>
+                <form method="post" action="{{ route('instructor.check-in') }}" class="d-inline">
+                    @csrf
+                    <button type="submit" class="btn btn-success btn-lg" {{ $checkInAllowed ? '' : 'disabled title="Check-in only allowed from institute network"' }}>
+                        <i class="bi bi-box-arrow-in-right me-2"></i>Check In
+                    </button>
+                </form>
+                @if(!$checkInAllowed)
+                    <p class="small text-warning mb-0 mt-2">Check-in is restricted to institute Wi‑Fi.</p>
+                @endif
+            @endif
+        </div>
+    </div>
+    <!-- Instructor attendance END -->
+
     <!-- Counter boxes START -->
     <div class="row g-4">
         <div class="col-sm-6 col-lg-4">

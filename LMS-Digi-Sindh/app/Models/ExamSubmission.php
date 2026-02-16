@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class ExamSubmission extends Model
 {
@@ -37,5 +38,10 @@ class ExamSubmission extends Model
     public function markedByUser(): BelongsTo
     {
         return $this->belongsTo(User::class, 'marked_by');
+    }
+
+    public function submissionAnswers(): HasMany
+    {
+        return $this->hasMany(ExamSubmissionAnswer::class);
     }
 }

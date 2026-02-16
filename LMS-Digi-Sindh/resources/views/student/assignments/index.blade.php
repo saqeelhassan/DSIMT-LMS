@@ -20,9 +20,9 @@
                     <thead>
                         <tr>
                             <th>Assignment</th>
-                            <th>Course</th>
+                            <th>Course / Batch</th>
                             <th>Total marks</th>
-                            <th>Due date</th>
+                            <th>Deadline</th>
                             <th>Status</th>
                             <th>Action</th>
                         </tr>
@@ -35,7 +35,7 @@
                                 <h6 class="mb-0">{{ $assignment->title }}</h6>
                                 @if($assignment->description)<small class="text-body">{{ Str::limit($assignment->description, 50) }}</small>@endif
                             </td>
-                            <td>{{ $assignment->course->name ?? '-' }}</td>
+                            <td>{{ $assignment->course->name ?? '-' }}@if($assignment->batch) <span class="text-muted">({{ $assignment->batch->name }})</span>@endif</td>
                             <td>{{ $assignment->total_marks }}</td>
                             <td>{{ $assignment->due_date ? $assignment->due_date->format('M d, Y') : '-' }}</td>
                             <td>

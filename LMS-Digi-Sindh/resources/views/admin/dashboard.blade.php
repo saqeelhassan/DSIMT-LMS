@@ -106,6 +106,28 @@
             </div>
         </a>
     </div>
+    @if(isset($attendanceOverview) && (auth()->user()->role?->name === 'SuperAdmin' || auth()->user()->role?->name === 'Staff' || auth()->user()->hasAdminPermission('batches.manage')))
+    <div class="col-12 mt-2">
+        <a href="{{ route('admin.attendance.index') }}" class="text-decoration-none">
+            <div class="card card-body bg-light border p-4">
+                <h6 class="mb-2"><i class="bi bi-calendar-check me-2"></i>Today's attendance</h6>
+                <div class="row g-2 small">
+                    <div class="col-md-6">
+                        <span class="text-body">Students:</span>
+                        <strong>{{ $attendanceOverview['student_present_count'] ?? 0 }}/{{ $attendanceOverview['student_expected_count'] ?? 0 }}</strong>
+                        <span class="text-success">({{ $attendanceOverview['student_present_percent'] ?? 0 }}% present)</span>
+                    </div>
+                    <div class="col-md-6">
+                        <span class="text-body">Instructors:</span>
+                        <strong>{{ $attendanceOverview['instructor_present_count'] ?? 0 }}</strong> present,
+                        <strong class="text-danger">{{ $attendanceOverview['instructor_absent_count'] ?? 0 }}</strong> absent
+                    </div>
+                </div>
+                <span class="d-block small text-body-secondary mt-1">Click to correct times or download payroll report.</span>
+            </div>
+        </a>
+    </div>
+    @endif
 </div>
 <!-- Counter boxes END -->
 

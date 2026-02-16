@@ -4,7 +4,7 @@
             <!-- Widget -->
             <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
                 <!-- Logo START -->
-                <a href="{{ route('index') }}"> <img class="h-20px" src="{{ asset('dsimt/images/logo/logo1.png') }}" alt="Digital Sindh">
+                <a href="{{ route('login') }}"> <img class="h-20px" src="{{ asset('images/logo.png') }}" alt="LMS">
                 </a>
             </div>
 

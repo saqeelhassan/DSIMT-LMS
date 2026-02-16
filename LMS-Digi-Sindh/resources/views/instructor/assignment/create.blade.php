@@ -16,6 +16,16 @@
             <form method="post" action="{{ route('instructor.assignments.store', $course) }}" enctype="multipart/form-data">
                 @csrf
                 <div class="mb-3">
+                    <label for="batch_id" class="form-label">Batch *</label>
+                    <select name="batch_id" id="batch_id" class="form-select" required>
+                        <option value="">Select batch</option>
+                        @foreach($batches as $b)
+                            <option value="{{ $b->id }}" {{ old('batch_id') == $b->id ? 'selected' : '' }}>{{ $b->name }}</option>
+                        @endforeach
+                    </select>
+                    <small class="text-muted">Only students in this batch will see this assignment.</small>
+                </div>
+                <div class="mb-3">
                     <label for="title" class="form-label">Title *</label>
                     <input type="text" name="title" id="title" class="form-control" value="{{ old('title') }}" required maxlength="255">
                 </div>

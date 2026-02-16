@@ -7,6 +7,7 @@ use App\Models\Enrollment;
 use App\Models\Invoice;
 use App\Models\Payment;
 use App\Models\User;
+use App\Services\FeeReminderService;
 use App\Services\FeeVoucherService;
 use Carbon\Carbon;
 use Illuminate\Http\RedirectResponse;
@@ -71,9 +72,9 @@ class InvoiceController extends Controller
 
     public function recordPayment(Request $request, Invoice $invoice): RedirectResponse
     {
-        $balance = (float) max(0, $invoice->amount - $invoice->amount_paid);
+        $balance = $invoice->balance;
         $validated = $request->validate([
-            'amount' => ['required', 'numeric', 'min:0.01', 'max:' . $balance],
+            'amount' => ['required', 'numeric', 'min:0.01', 'max:' . max(0.01, $balance)],
             'payment_method_id' => ['nullable', 'integer', 'exists:payment_methods,id'],
             'method_note' => ['nullable', 'string', 'max:100'],
             'paid_at' => ['required', 'date'],
@@ -92,7 +93,8 @@ class InvoiceController extends Controller
             ]);
 
             $totalPaid = $invoice->amount_paid + (float) $validated['amount'];
-            $status = $totalPaid >= $invoice->amount ? 'paid' : 'partial';
+            $amountDue = (float) max(0, $invoice->amount - ($invoice->discount_amount ?? 0));
+            $status = $totalPaid >= $amountDue ? 'paid' : 'partial';
             $invoice->update([
                 'amount_paid' => $totalPaid,
                 'status' => $status,
@@ -101,11 +103,44 @@ class InvoiceController extends Controller
             if ($invoice->enrollment_id) {
                 $enrollment = $invoice->enrollment;
                 $enrollment->fees_collected = ($enrollment->fees_collected ?? 0) + (float) $validated['amount'];
+                if ($status === 'paid') {
+                    // Unlock portal: set access_expiry_date so student gets access
+                    $newExpiry = $invoice->billing_month
+                        ? Carbon::parse($invoice->billing_month)->endOfMonth()->toDateString()
+                        : ($invoice->due_date
+                            ? Carbon::parse($invoice->due_date)->endOfMonth()->toDateString()
+                            : Carbon::now()->endOfMonth()->toDateString());
+                    $current = $enrollment->access_expiry_date?->format('Y-m-d');
+                    if (! $current || $newExpiry > $current) {
+                        $enrollment->access_expiry_date = $newExpiry;
+                    }
+                }
                 $enrollment->save();
             }
         });
 
         return redirect()->route('admin.invoices.show', $invoice)->with('success', 'Payment recorded.');
+    }
+
+    public function applyDiscount(Request $request, Invoice $invoice): RedirectResponse
+    {
+        $maxDiscount = (float) $invoice->amount;
+        $validated = $request->validate([
+            'discount_amount' => ['required', 'numeric', 'min:0', 'max:' . $maxDiscount],
+        ]);
+        $invoice->update(['discount_amount' => $validated['discount_amount']]);
+        return redirect()->route('admin.invoices.show', $invoice)->with('success', 'Discount applied.');
+    }
+
+    /** Send fee reminder (SMS/WhatsApp or log) to student. */
+    public function remind(Invoice $invoice): RedirectResponse
+    {
+        if ($invoice->balance <= 0) {
+            return redirect()->back()->with('info', 'Voucher is already paid.');
+        }
+        $service = app(FeeReminderService::class);
+        $service->sendReminder($invoice);
+        return redirect()->back()->with('success', 'Reminder sent to student.');
     }
 
     /** Generate monthly fee vouchers for the current month (or optional month). */

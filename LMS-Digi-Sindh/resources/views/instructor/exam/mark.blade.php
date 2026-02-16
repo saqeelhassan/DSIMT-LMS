@@ -19,7 +19,12 @@
             <h5 class="mb-0">Student answer</h5>
         </div>
         <div class="card-body">
-            @if($submission->answer_content)
+            @if($exam->isMcq())
+                <p class="mb-2"><strong>MCQ — Auto score: {{ $submission->marks_obtained ?? 0 }}/{{ $exam->total_marks_from_questions }}</strong></p>
+                @if($submission->answer_content)
+                    <div class="border rounded p-3 bg-light bg-opacity-50" style="white-space: pre-wrap;">{{ $submission->answer_content }}</div>
+                @endif
+            @elseif($submission->answer_content)
                 <div class="border rounded p-3 bg-light bg-opacity-50" style="white-space: pre-wrap;">{{ $submission->answer_content }}</div>
             @else
                 <p class="mb-0 text-body">No answer submitted yet.</p>
@@ -27,13 +32,14 @@
         </div>
     </div>
 
+    @php $maxMarks = $exam->isMcq() ? $exam->total_marks_from_questions : $exam->total_marks; @endphp
     <div class="card border rounded-3">
         <div class="card-body p-4">
-            <form method="post" action="{{ route('instructor.exams.mark', [$course, $exam, $submission]) }}">
+            <form method="post" action="{{ route('instructor.exams.mark', [$course, $exam, $submission->user]) }}">
                 @csrf
                 <div class="mb-3">
-                    <label for="marks_obtained" class="form-label">Marks obtained * (max {{ $exam->total_marks }})</label>
-                    <input type="number" name="marks_obtained" id="marks_obtained" class="form-control" step="0.01" min="0" max="{{ $exam->total_marks }}" value="{{ old('marks_obtained', $submission->marks_obtained) }}" required>
+                    <label for="marks_obtained" class="form-label">Marks obtained * (max {{ $maxMarks }})</label>
+                    <input type="number" name="marks_obtained" id="marks_obtained" class="form-control" step="0.01" min="0" max="{{ $maxMarks }}" value="{{ old('marks_obtained', $submission->marks_obtained) }}" required>
                 </div>
                 <div class="mb-4">
                     <label for="feedback" class="form-label">Feedback (optional)</label>

@@ -16,6 +16,23 @@
             <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
         </div>
     @endif
+    @if(session('warning'))
+        <div class="alert alert-warning alert-dismissible fade show">{{ session('warning') }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    @endif
+
+    @if(isset($batches) && $batches->isNotEmpty())
+    <form method="get" class="mb-3 d-flex align-items-center gap-2 flex-wrap">
+        <label class="mb-0">Filter by batch:</label>
+        <select name="batch_id" class="form-select form-select-sm w-auto" onchange="this.form.submit()">
+            <option value="">All batches</option>
+            @foreach($batches as $b)
+                <option value="{{ $b->id }}" {{ request('batch_id') == $b->id ? 'selected' : '' }}>{{ $b->name }}</option>
+            @endforeach
+        </select>
+    </form>
+    @endif
 
     <div class="card border rounded-3">
         <div class="card-body">
@@ -24,8 +41,9 @@
                     <thead>
                         <tr>
                             <th>Assignment</th>
+                            <th>Batch</th>
                             <th>Total marks</th>
-                            <th>Due date</th>
+                            <th>Deadline</th>
                             <th>Submissions</th>
                             <th>Actions</th>
                         </tr>
@@ -37,8 +55,9 @@
                                 <h6 class="mb-0">{{ $a->title }}</h6>
                                 @if($a->description)<small class="text-body">{{ Str::limit($a->description, 60) }}</small>@endif
                             </td>
+                            <td>{{ $a->batch?->name ?? '—' }}</td>
                             <td>{{ $a->total_marks }}</td>
-                            <td>{{ $a->due_date?->format('M d, Y') ?? '—' }}</td>
+                            <td>{{ $a->due_date?->format('M d, Y H:i') ?? '—' }}</td>
                             <td>{{ $a->submissions_count }}</td>
                             <td>
                                 <a href="{{ route('instructor.assignments.submissions', [$course, $a]) }}" class="btn btn-sm btn-outline-primary">Grade submissions</a>
@@ -46,7 +65,7 @@
                         </tr>
                         @empty
                         <tr>
-                            <td colspan="5" class="text-center py-4 text-body">No assignments yet. <a href="{{ route('instructor.assignments.create', $course) }}">Create one</a>.</td>
+                            <td colspan="6" class="text-center py-4 text-body">No assignments yet. <a href="{{ route('instructor.assignments.create', $course) }}">Create one</a>.</td>
                         </tr>
                         @endforelse
                     </tbody>

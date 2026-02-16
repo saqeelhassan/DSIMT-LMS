@@ -1,0 +1,100 @@
+/* =========================================
+   DSIMT Theme Colors
+   Primary: #221d55 | Accent: #fbaf38 | Gray: #434344
+   ========================================= */
+
+:root {
+  --dsimt-primary: #221d55;
+  --dsimt-accent: #fbaf38;
+  --dsimt-gray: #434344;
+}
+
+/* Topbar - primary background */
+.main_header_area .topbar-wrap {
+  background-color: var(--dsimt-primary) !important;
+}
+
+/* Nav links - gray default, accent on hover/active */
+.header_menu .navbar.navbar-default .nav.navbar-nav li a {
+  color: var(--dsimt-gray) !important;
+}
+.header_menu .navbar.navbar-default .nav.navbar-nav li a:hover,
+.header_menu .navbar.navbar-default .nav.navbar-nav li:hover a,
+.header_menu .navbar.navbar-default .nav.navbar-nav li.active a,
+.header_menu .navbar.navbar-default.navbar-sticky-in .nav.navbar-nav li:hover > a,
+.header_menu .navbar.navbar-default.navbar-sticky-in .nav.navbar-nav li.active > a {
+  color: var(--dsimt-accent) !important;
+}
+
+/* Dropdown menu items */
+.header_menu .navbar.navbar-default .nav.navbar-nav li.submenu .dropdown-menu li a {
+  color: var(--dsimt-gray) !important;
+}
+.header_menu .navbar.navbar-default .nav.navbar-nav li.submenu .dropdown-menu li a:hover {
+  background: var(--dsimt-accent) !important;
+  color: #fff !important;
+}
+
+/* General ul li text */
+ul li,
+ol li {
+  color: var(--dsimt-gray) !important;
+}
+
+/* Links */
+a:hover, a:focus {
+  color: var(--dsimt-accent) !important;
+}
+
+/* Footer ul links - ft-lists only (keep social icons as-is) */
+footer .footer-upper .ft-lists ul li a {
+  color: var(--dsimt-gray) !important;
+}
+footer .footer-upper .ft-lists ul li a:hover {
+  color: var(--dsimt-accent) !important;
+}
+footer .footer-upper .ft-lists ul li {
+  color: var(--dsimt-gray) !important;
+}
+
+/* Headings - primary color */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--dsimt-primary) !important;
+}
+h3 a, h4 a {
+  color: var(--dsimt-primary) !important;
+}
+
+/* Body background tint */
+body {
+  background-color: rgba(34, 29, 85, 0.05) !important;
+}
+
+/* Buttons and accents */
+.btn,
+.slide-btn .btn,
+.bg-primary {
+  background: var(--dsimt-accent) !important;
+  border-color: var(--dsimt-accent) !important;
+  color: #fff !important;
+}
+.btn:hover,
+.slide-btn .btn:hover {
+  background: var(--dsimt-primary) !important;
+  border-color: var(--dsimt-primary) !important;
+  color: #fff !important;
+}
+
+/* Mobile slicknav */
+.slicknav_nav a:hover {
+  color: var(--dsimt-accent) !important;
+}
+.slicknav_nav .submenu.slicknav_open {
+  background: var(--dsimt-primary) !important;
+}
+
+/* Border accents */
+.border-primary,
+a:after {
+  border-color: var(--dsimt-accent) !important;
+}

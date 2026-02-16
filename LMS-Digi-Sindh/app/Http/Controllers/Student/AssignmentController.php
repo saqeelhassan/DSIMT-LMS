@@ -16,9 +16,19 @@ class AssignmentController extends Controller
     public function index(): View
     {
         $user = auth()->user();
-        $enrolledCourseIds = $user->enrollments()->pluck('course_id');
-        $assignments = Assignment::whereIn('course_id', $enrolledCourseIds)
-            ->with('course')
+        $myBatchIds = $user->enrollments()->where('enrollment_status', 'active')->pluck('batch_id')->filter()->unique()->values()->all();
+        $enrolledCourseIds = $user->enrollments()->pluck('course_id')->unique()->values()->all();
+
+        $assignments = Assignment::query()
+            ->where(function ($q) use ($myBatchIds, $enrolledCourseIds) {
+                if (! empty($myBatchIds)) {
+                    $q->whereIn('batch_id', $myBatchIds);
+                }
+                $q->orWhere(function ($q2) use ($enrolledCourseIds) {
+                    $q2->whereNull('batch_id')->whereIn('course_id', $enrolledCourseIds);
+                });
+            })
+            ->with('course', 'batch')
             ->latest()
             ->paginate(15);
 
@@ -32,8 +42,12 @@ class AssignmentController extends Controller
     public function submitForm(Assignment $assignment): View|RedirectResponse
     {
         $user = auth()->user();
-        if (!$user->enrollments()->where('course_id', $assignment->course_id)->exists()) {
+        $enrollment = $user->enrollments()->where('course_id', $assignment->course_id)->first();
+        if (! $enrollment) {
             abort(403);
+        }
+        if ($assignment->batch_id && $enrollment->batch_id != $assignment->batch_id) {
+            abort(403, 'This assignment is not for your batch.');
         }
 
         $submission = AssignmentSubmission::where('assignment_id', $assignment->id)
@@ -46,8 +60,12 @@ class AssignmentController extends Controller
     public function submit(Request $request, Assignment $assignment): RedirectResponse
     {
         $user = auth()->user();
-        if (!$user->enrollments()->where('course_id', $assignment->course_id)->exists()) {
+        $enrollment = $user->enrollments()->where('course_id', $assignment->course_id)->first();
+        if (! $enrollment) {
             abort(403);
+        }
+        if ($assignment->batch_id && $enrollment->batch_id != $assignment->batch_id) {
+            abort(403, 'This assignment is not for your batch.');
         }
 
         $validated = $request->validate([

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\Admin\AttendanceReportController;
 use App\Models\Batch;
 use App\Models\Course;
 use App\Models\Enrollment;
@@ -66,10 +67,13 @@ class DashboardController extends Controller
             ];
         }
 
+        $attendanceOverview = AttendanceReportController::todayOverview();
+
         return view('admin.dashboard', compact(
             'totalCourses', 'totalEnrollments', 'totalUsers', 'activeBatches',
             'recentActivity', 'overdueCount', 'markedOverdue',
-            'earningsLabels', 'earningsValues', 'trafficSources'
+            'earningsLabels', 'earningsValues', 'trafficSources',
+            'attendanceOverview'
         ));
     }
 }

@@ -24,7 +24,14 @@ class ClassroomController extends Controller
             ->get()
             ->keyBy('course_content_id');
 
-        return view('student.classroom.show', compact('course', 'progressMap'));
+        $enrollmentWithBatch = $user->enrollments()
+            ->where('course_id', $course->id)
+            ->whereNotNull('batch_id')
+            ->with('batch')
+            ->first();
+        $primaryBatch = $enrollmentWithBatch?->batch;
+
+        return view('student.classroom.show', compact('course', 'progressMap', 'primaryBatch'));
     }
 
     public function recordProgress(Request $request): \Illuminate\Http\JsonResponse|RedirectResponse

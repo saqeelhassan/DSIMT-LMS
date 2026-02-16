@@ -2,8 +2,8 @@
 <nav class="navbar sidebar sidebar-light navbar-expand-xl navbar-light">
     <!-- Navbar brand for xl -->
     <div class="d-flex align-items-center">
-        <a class="navbar-brand" href="{{ route('index') }}">
-            <img class="navbar-brand-item" src="{{ asset('dsimt/images/logo/logo1.png') }}" alt="Digital Sindh">
+        <a class="navbar-brand" href="{{ route('super-admin.dashboard') }}">
+            <img class="navbar-brand-item" src="{{ asset('images/logo.png') }}" alt="LMS">
         </a>
     </div>
 
@@ -93,7 +93,7 @@
             <div class="px-3 mt-auto pt-3">
                 <div class="d-flex align-items-center justify-content-between text-primary-hover">
                     <a class="h5 mb-0 text-body" href="{{ route('super-admin.dashboard') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="Dashboard"><i class="bi bi-gear-fill"></i></a>
-                    <a class="h5 mb-0 text-body" href="{{ route('index') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="Home"><i class="bi bi-globe"></i></a>
+                    <a class="h5 mb-0 text-body" href="{{ route('login') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="Home"><i class="bi bi-globe"></i></a>
                     <form method="post" action="{{ route('auth.logout') }}" class="d-inline">@csrf<button type="submit" class="btn btn-link p-0 h5 mb-0 text-body border-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Sign out"><i class="bi bi-power"></i></button></form>
                 </div>
             </div>

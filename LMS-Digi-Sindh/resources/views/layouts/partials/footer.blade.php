@@ -6,9 +6,9 @@
             <!-- Widget 1 START -->
             <div class="col-lg-3">
                 <!-- logo -->
-                <a class="me-0" href="{{ route('index') }}">
-                    <img class="light-mode-item h-40px" src="{{ asset('dsimt/images/logo/logo1.png') }}" alt="Digital Sindh">
-                    <img class="dark-mode-item h-40px" src="{{ asset('dsimt/images/logo/logo1.png') }}" alt="Digital Sindh">
+                <a class="me-0" href="{{ route('login') }}">
+                    <img class="light-mode-item h-40px" src="{{ asset('images/logo.png') }}" alt="LMS">
+                    <img class="dark-mode-item h-40px" src="{{ asset('images/logo.png') }}" alt="LMS">
                 </a>
                 <p class="my-3">Digital Sindh LMS, built specifically for the Digital Sindh Institute of Management & Technology which is
                     dedicated to teaching and involving learners. </p>

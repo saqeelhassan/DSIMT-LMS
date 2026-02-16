@@ -8,7 +8,7 @@
 
 
 <!-- Favicon -->
-<link rel="shortcut icon" href="{{ asset('dsimt/images/logo/logo.png') }}">
+<link rel="shortcut icon" href="{{ asset('images/favicon.png') }}">
 
 <!-- Google Font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">

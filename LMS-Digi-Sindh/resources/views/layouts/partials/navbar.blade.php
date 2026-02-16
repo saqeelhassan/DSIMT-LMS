@@ -77,8 +77,8 @@
             <!-- Logo START (hidden when instructor - logo is in sidebar) -->
             @if(empty($account) || $account !== 'instructor')
             <a class="navbar-brand" href="{{ auth()->check() ? route('dashboard') : route('login') }}">
-                <img class="light-mode-item navbar-brand-item" src="{{ asset('dsimt/images/logo/logo1.png') }}" alt="Digital Sindh">
-                <img class="dark-mode-item navbar-brand-item" src="{{ asset('dsimt/images/logo/logo1.png') }}" alt="Digital Sindh">
+                <img class="light-mode-item navbar-brand-item" src="{{ asset('images/logo.png') }}" alt="LMS">
+                <img class="dark-mode-item navbar-brand-item" src="{{ asset('images/logo.png') }}" alt="LMS">
             </a>
             @endif
             <!-- Logo END -->

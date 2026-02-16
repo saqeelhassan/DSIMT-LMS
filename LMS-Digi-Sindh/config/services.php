@@ -35,4 +35,11 @@ return [
         ],
     ],
 
+    'biometric' => [
+        'token' => env('BIOMETRIC_API_TOKEN'),
+        'office_start_time' => env('BIOMETRIC_OFFICE_START', '09:00'),
+        'late_after_minutes' => (int) env('BIOMETRIC_LATE_AFTER_MINUTES', 15),
+        'short_attendance_minutes' => (int) env('BIOMETRIC_SHORT_ATTENDANCE_MINUTES', 10),
+    ],
+
 ];

@@ -3,8 +3,8 @@
 
 	<!-- Navbar brand for xl START -->
 	<div class="d-flex align-items-center">
-		<a class="navbar-brand" href="{{ route('index' ) }}">
-			<img class="navbar-brand-item" src="{{ asset('dsimt/images/logo/logo1.png') }}" alt="Digital Sindh">
+		<a class="navbar-brand" href="{{ route('admin.dashboard') }}">
+			<img class="navbar-brand-item" src="{{ asset('images/logo.png') }}" alt="LMS">
 		</a>
 	</div>
 	<!-- Navbar brand for xl END -->
@@ -77,6 +77,7 @@
 					<ul class="nav collapse flex-column" id="collapseBatches" data-bs-parent="#navbar-sidebar">
 						<li class="nav-item"><a class="nav-link {{ Request::is('admin/batches') && !Request::is('admin/batches/create') && !Request::is('admin/batches/*/edit') && !Request::is('admin/batches/*/timetable') ? 'active' : '' }}" href="{{ route('admin.batches.index') }}">All Batches</a></li>
 						<li class="nav-item"><a class="nav-link {{ Request::is('admin/batches/create') ? 'active' : '' }}" href="{{ route('admin.batches.create') }}">Add Batch</a></li>
+						<li class="nav-item"><a class="nav-link {{ Request::is('admin/attendance*') ? 'active' : '' }}" href="{{ route('admin.attendance.index') }}">Attendance & Payroll</a></li>
 					</ul>
 				</li>
 				@endif
@@ -88,6 +89,7 @@
 						<i class="bi bi-currency-dollar fa-fw me-2"></i>Fee & Finance
 					</a>
 					<ul class="nav collapse flex-column" id="collapseFees" data-bs-parent="#navbar-sidebar">
+						<li class="nav-item"><a class="nav-link {{ Request::is('admin/fee-management*') ? 'active' : '' }}" href="{{ route('admin.fee-management.index') }}">Fee Management</a></li>
 						<li class="nav-item"><a class="nav-link {{ Request::is('admin/invoices*') ? 'active' : '' }}" href="{{ route('admin.invoices.index') }}">Invoices</a></li>
 						<li class="nav-item"><a class="nav-link {{ Request::is('admin/defaulters*') ? 'active' : '' }}" href="{{ route('admin.defaulters.index') }}">Defaulter List</a></li>
 					</ul>

@@ -23,6 +23,10 @@ class SettingsController extends Controller
             'currency' => ['nullable', 'string', 'max:10'],
             'institute_name' => ['nullable', 'string', 'max:255'],
             'logo' => ['nullable', 'image', 'max:2048'],
+            'attendance_allowed_ips' => ['nullable', 'string', 'max:500'],
+            'attendance_geo_lat' => ['nullable', 'numeric'],
+            'attendance_geo_lng' => ['nullable', 'numeric'],
+            'attendance_geo_radius_meters' => ['nullable', 'numeric', 'min:0'],
         ]);
 
         if (!empty($validated['academic_year'])) {
@@ -33,6 +37,18 @@ class SettingsController extends Controller
         }
         if (!empty($validated['institute_name'])) {
             Setting::set('institute_name', $validated['institute_name']);
+        }
+        if (array_key_exists('attendance_allowed_ips', $validated)) {
+            Setting::set('attendance_allowed_ips', $validated['attendance_allowed_ips'] ?? '');
+        }
+        if (array_key_exists('attendance_geo_lat', $validated)) {
+            Setting::set('attendance_geo_lat', $validated['attendance_geo_lat'] ?? '');
+        }
+        if (array_key_exists('attendance_geo_lng', $validated)) {
+            Setting::set('attendance_geo_lng', $validated['attendance_geo_lng'] ?? '');
+        }
+        if (array_key_exists('attendance_geo_radius_meters', $validated)) {
+            Setting::set('attendance_geo_radius_meters', $validated['attendance_geo_radius_meters'] ?? '');
         }
 
         if ($request->hasFile('logo')) {

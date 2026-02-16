@@ -9,8 +9,7 @@ use Illuminate\Database\Seeder;
 class DsimtCourseSeeder extends Seeder
 {
     /**
-     * DSIMT website course names – sync with main-website course views.
-     * These are added to the LMS so students can enroll from the website.
+     * Course names for the LMS (used by course list and enrollment).
      */
     public function run(): void
     {

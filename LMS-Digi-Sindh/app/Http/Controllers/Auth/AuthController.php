@@ -136,6 +136,7 @@ class AuthController extends Controller
                         'user_id' => $user->id,
                         'course_id' => $courseId,
                         'payment_status' => 'pending',
+                        'enrollment_status' => 'pending_approval',
                     ]);
                 }
             }
@@ -222,6 +223,7 @@ class AuthController extends Controller
                     'user_id' => $user->id,
                     'course_id' => (int) $validated['course_id'],
                     'payment_status' => 'pending',
+                    'enrollment_status' => 'pending_approval',
                 ]);
             }
 

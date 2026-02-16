@@ -48,8 +48,8 @@
                             </td>
                             <td>{{ $sub?->submitted_at?->format('M d, Y H:i') ?? '—' }}</td>
                             <td>
-                                @if($sub && $sub->status === 'marked')
-                                    <strong>{{ $sub->marks_obtained }}/{{ $exam->total_marks }}</strong>
+                                @if($sub && ($sub->status === 'marked' || ($sub->status === 'submitted' && $exam->isMcq())))
+                                    <strong>{{ $sub->marks_obtained }}/{{ $exam->isMcq() ? $exam->total_marks_from_questions : $exam->total_marks }}</strong>
                                 @else
                                     —
                                 @endif

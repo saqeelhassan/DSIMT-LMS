@@ -5,9 +5,9 @@
 
 			<!-- Logo START -->
 			<div class="d-flex align-items-center d-xl-none">
-				<a class="navbar-brand" href="{{ route('index' ) }}">
-					<img class="light-mode-item navbar-brand-item h-30px" src="{{ asset('dsimt/images/logo/logo1.png') }}" alt="Digital Sindh">
-					<img class="dark-mode-item navbar-brand-item h-30px" src="{{ asset('dsimt/images/logo/logo1.png') }}" alt="Digital Sindh">
+				<a class="navbar-brand" href="{{ route('super-admin.dashboard') }}">
+					<img class="light-mode-item navbar-brand-item h-30px" src="{{ asset('images/logo.png') }}" alt="LMS">
+					<img class="dark-mode-item navbar-brand-item h-30px" src="{{ asset('images/logo.png') }}" alt="LMS">
 				</a>
 			</div>
 			<!-- Logo END -->

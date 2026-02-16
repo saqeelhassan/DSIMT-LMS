@@ -26,9 +26,9 @@
                         <label class="form-label small mb-0">Status</label>
                         <select name="status" class="form-select form-select-sm" onchange="this.form.submit()">
                             <option value="">All</option>
+                            <option value="pending_approval" {{ request('status') === 'pending_approval' ? 'selected' : '' }}>Pending approval</option>
                             <option value="active" {{ request('status') === 'active' ? 'selected' : '' }}>Active</option>
-                            <option value="completed" {{ request('status') === 'completed' ? 'selected' : '' }}>Completed</option>
-                            <option value="cancelled" {{ request('status') === 'cancelled' ? 'selected' : '' }}>Cancelled</option>
+                            <option value="dropped" {{ request('status') === 'dropped' ? 'selected' : '' }}>Dropped</option>
                         </select>
                     </div>
                 </form>
@@ -47,6 +47,7 @@
                                 <th>Status</th>
                                 <th>Payment</th>
                                 <th>Enrolled</th>
+                                <th class="text-end">Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -57,17 +58,27 @@
                                     <td>{{ $enrollment->batch?->name ?? '—' }}</td>
                                     <td>
                                         <span class="badge {{ match($enrollment->enrollment_status ?? '') {
+                                            'pending_approval' => 'bg-warning text-dark',
                                             'active' => 'bg-success',
-                                            'completed' => 'bg-info',
-                                            'cancelled' => 'bg-secondary',
+                                            'dropped' => 'bg-secondary',
                                             default => 'bg-light text-dark'
                                         } }}">{{ $enrollment->enrollment_status ?? '—' }}</span>
                                     </td>
                                     <td>{{ $enrollment->payment_status ?? '—' }}</td>
                                     <td>{{ $enrollment->created_at?->format('M j, Y') ?? '—' }}</td>
+                                    <td>
+                                        @if(($enrollment->enrollment_status ?? '') === 'pending_approval')
+                                            <form method="post" action="{{ route('admin.enrollments.approve', $enrollment) }}" class="d-inline">
+                                                @csrf
+                                                <button type="submit" class="btn btn-sm btn-success">Approve</button>
+                                            </form>
+                                        @else
+                                            —
+                                        @endif
+                                    </td>
                                 </tr>
                             @empty
-                                <tr><td colspan="6" class="text-center py-4 text-body">No enrollments yet.</td></tr>
+                                <tr><td colspan="7" class="text-center py-4 text-body">No enrollments yet.</td></tr>
                             @endforelse
                         </tbody>
                     </table>

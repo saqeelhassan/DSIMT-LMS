@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Instructor;
 use App\Http\Controllers\Controller;
 use App\Models\Course;
 use App\Models\Enrollment;
+use App\Models\InstructorAttendance;
+use App\Services\AttendanceIpRestrictionService;
 use Illuminate\Support\Facades\DB;
 use Illuminate\View\View;
 
@@ -48,6 +50,11 @@ class DashboardController extends Controller
             ? round((($enrollmentsThisMonth - $enrollmentsLastMonth) / $enrollmentsLastMonth) * 100, 2)
             : ($enrollmentsThisMonth > 0 ? 100 : 0);
 
+        $todayAttendance = InstructorAttendance::where('instructor_id', $instructorId)
+            ->whereDate('date', now()->toDateString())
+            ->first();
+        $checkInAllowed = app(AttendanceIpRestrictionService::class)->isAllowed();
+
         return view('instructor.dashboard', compact(
             'totalCourses',
             'totalEnrollments',
@@ -56,7 +63,9 @@ class DashboardController extends Controller
             'recentEnrollments',
             'enrollmentsThisMonth',
             'enrollmentsLastMonth',
-            'lastMonthPercent'
+            'lastMonthPercent',
+            'todayAttendance',
+            'checkInAllowed'
         ));
     }
 }
